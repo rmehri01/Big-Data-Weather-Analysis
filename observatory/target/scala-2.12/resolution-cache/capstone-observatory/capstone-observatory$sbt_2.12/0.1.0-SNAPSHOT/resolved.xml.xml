@@ -4,7 +4,7 @@
 		module="capstone-observatory$sbt_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20191223184534"
+		publication="20191223211934"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

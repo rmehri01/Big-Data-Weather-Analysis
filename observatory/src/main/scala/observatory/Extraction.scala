@@ -14,6 +14,18 @@ object Extraction extends ExtractionInterface {
     * @return A sequence containing triplets (date, location, temperature)
     */
   def locateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): Iterable[(LocalDate, Location, Temperature)] = {
+    import org.apache.spark.sql.SparkSession
+
+    val spark: SparkSession =
+      SparkSession
+        .builder()
+        .appName("Weather Analysis")
+        .master("local[4]")
+        .getOrCreate()
+
+    val stationsDf = spark.read.options(Map("inferSchema" -> "true")).csv(stationsFile)
+    val temperaturesDf = spark.read.options(Map("inferSchema" -> "true")).csv(temperaturesFile)
+    stationsDf.join(temperaturesDf)
     ???
   }
 

@@ -4,7 +4,7 @@
 		module="capstone-observatory_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20191223184551"
+		publication="20191223211936"
 	>
 		<description>
 		capstone-observatory
@@ -40,5 +40,7 @@
 		<dependency org="co.fs2" name="fs2-io_2.12" rev="1.0.5" conf="compile->default(compile)"/>
 		<dependency org="org.scalacheck" name="scalacheck_2.12" rev="1.13.5" conf="test->default(compile)"/>
 		<dependency org="com.novocode" name="junit-interface" rev="0.11" conf="test->default(compile)"/>
+		<dependency org="org.scalactic" name="scalactic_2.12" rev="3.1.0" conf="compile->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.1.0" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>
