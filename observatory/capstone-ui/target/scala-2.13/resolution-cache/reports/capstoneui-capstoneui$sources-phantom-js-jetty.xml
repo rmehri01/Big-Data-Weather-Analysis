@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="phantom-js-jetty"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20191223184948"/>
+		date="20191223212002"/>
 	<dependencies>
 		<module organisation="org.eclipse.jetty" name="jetty-websocket">
 			<revision name="8.1.16.v20140903" status="release" pubdate="20140903110018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
@@ -16,7 +16,7 @@
 				<metadata-artifact status="no" details="" size="8138" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-websocket/ivy-8.1.16.v20140903.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-websocket/8.1.16.v20140903/jetty-websocket-8.1.16.v20140903.pom"/>
 				<caller organisation="capstoneui" name="capstoneui$sources" conf="phantom-js-jetty" rev="8.1.16.v20140903" rev-constraint-default="8.1.16.v20140903" rev-constraint-dynamic="8.1.16.v20140903" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jetty-websocket" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="74977" time="569" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-websocket/srcs/jetty-websocket-8.1.16.v20140903-sources.jar">
+					<artifact name="jetty-websocket" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="74977" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-websocket/srcs/jetty-websocket-8.1.16.v20140903-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-websocket/8.1.16.v20140903/jetty-websocket-8.1.16.v20140903-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -29,7 +29,7 @@
 				<metadata-artifact status="no" details="" size="8037" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-server/ivy-8.1.16.v20140903.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/8.1.16.v20140903/jetty-server-8.1.16.v20140903.pom"/>
 				<caller organisation="capstoneui" name="capstoneui$sources" conf="phantom-js-jetty" rev="8.1.16.v20140903" rev-constraint-default="8.1.16.v20140903" rev-constraint-dynamic="8.1.16.v20140903" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jetty-server" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="228365" time="605" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-server/srcs/jetty-server-8.1.16.v20140903-sources.jar">
+					<artifact name="jetty-server" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="228365" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-server/srcs/jetty-server-8.1.16.v20140903-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/8.1.16.v20140903/jetty-server-8.1.16.v20140903-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -42,7 +42,7 @@
 				<metadata-artifact status="no" details="" size="7476" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-http/ivy-8.1.16.v20140903.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.16.v20140903/jetty-http-8.1.16.v20140903.pom"/>
 				<caller organisation="capstoneui" name="capstoneui$sources" conf="phantom-js-jetty" rev="8.1.16.v20140903" rev-constraint-default="8.1.16.v20140903" rev-constraint-dynamic="8.1.16.v20140903" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jetty-http" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="67386" time="392" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-http/srcs/jetty-http-8.1.16.v20140903-sources.jar">
+					<artifact name="jetty-http" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="67386" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-http/srcs/jetty-http-8.1.16.v20140903-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.16.v20140903/jetty-http-8.1.16.v20140903-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -55,7 +55,7 @@
 				<metadata-artifact status="no" details="" size="7332" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-8.1.16.v20140903.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.16.v20140903/jetty-io-8.1.16.v20140903.pom"/>
 				<caller organisation="capstoneui" name="capstoneui$sources" conf="phantom-js-jetty" rev="8.1.16.v20140903" rev-constraint-default="8.1.16.v20140903" rev-constraint-dynamic="8.1.16.v20140903" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jetty-io" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="69316" time="363" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-io/srcs/jetty-io-8.1.16.v20140903-sources.jar">
+					<artifact name="jetty-io" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="69316" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-io/srcs/jetty-io-8.1.16.v20140903-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.16.v20140903/jetty-io-8.1.16.v20140903-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -68,7 +68,7 @@
 				<metadata-artifact status="no" details="" size="7708" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-8.1.16.v20140903.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.16.v20140903/jetty-util-8.1.16.v20140903.pom"/>
 				<caller organisation="capstoneui" name="capstoneui$sources" conf="phantom-js-jetty" rev="8.1.16.v20140903" rev-constraint-default="8.1.16.v20140903" rev-constraint-dynamic="8.1.16.v20140903" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jetty-util" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="196507" time="623" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-util/srcs/jetty-util-8.1.16.v20140903-sources.jar">
+					<artifact name="jetty-util" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="196507" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-util/srcs/jetty-util-8.1.16.v20140903-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.16.v20140903/jetty-util-8.1.16.v20140903-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -81,7 +81,7 @@
 				<metadata-artifact status="no" details="" size="7425" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-continuation/ivy-8.1.16.v20140903.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/8.1.16.v20140903/jetty-continuation-8.1.16.v20140903.pom"/>
 				<caller organisation="capstoneui" name="capstoneui$sources" conf="phantom-js-jetty" rev="8.1.16.v20140903" rev-constraint-default="8.1.16.v20140903" rev-constraint-dynamic="8.1.16.v20140903" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="jetty-continuation" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="17552" time="343" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-continuation/srcs/jetty-continuation-8.1.16.v20140903-sources.jar">
+					<artifact name="jetty-continuation" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="17552" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty/jetty-continuation/srcs/jetty-continuation-8.1.16.v20140903-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/8.1.16.v20140903/jetty-continuation-8.1.16.v20140903-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -94,7 +94,7 @@
 				<metadata-artifact status="no" details="" size="3375" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/ivy-3.0.0.v201112011016.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016.pom"/>
 				<caller organisation="capstoneui" name="capstoneui$sources" conf="phantom-js-jetty" rev="3.0.0.v201112011016" rev-constraint-default="3.0.0.v201112011016" rev-constraint-dynamic="3.0.0.v201112011016" callerrev="0.1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="javax.servlet" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="329333" time="611" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/srcs/javax.servlet-3.0.0.v201112011016-sources.jar">
+					<artifact name="javax.servlet" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="329333" time="0" location="/Users/ryanmehri/.ivy2/cache/org.eclipse.jetty.orbit/javax.servlet/srcs/javax.servlet-3.0.0.v201112011016-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016-sources.jar"/>
 					</artifact>
 				</artifacts>

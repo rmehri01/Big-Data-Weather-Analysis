@@ -1302,120 +1302,24 @@
 [debug] == resolving dependencies capstoneui#capstoneui$sources;0.1.0-SNAPSHOT->org.eclipse.jetty#jetty-http;8.1.16.v20140903 [phantom-js-jetty->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.lihaoyi/scalatags_sjs0.6_2.13/0.7.0/srcs/scalatags_sjs0.6_2.13-sources.jar
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-js/scalajs-test-interface_2.13/0.6.28/srcs/scalajs-test-interface_2.13-sources.jar
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.lihaoyi/sourcecode_sjs0.6_2.13/0.1.7/srcs/sourcecode_sjs0.6_2.13-sources.jar
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-lang/scala-library/2.13.0/srcs/scala-library-sources.jar
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-js/scalajs-library_2.13/0.6.28/srcs/scalajs-library_2.13-sources.jar
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-js/scalajs-dom_sjs0.6_2.13/0.9.7/srcs/scalajs-dom_sjs0.6_2.13-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/lihaoyi/scalatags_sjs0.6_2.13/0.7.0/scalatags_sjs0.6_2.13-0.7.0-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.13/0.9.7/scalajs-dom_sjs0.6_2.13-0.9.7-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.13/0.6.28/scalajs-test-interface_2.13-0.6.28-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.13/0.6.28/scalajs-library_2.13-0.6.28-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_sjs0.6_2.13/0.1.7/sourcecode_sjs0.6_2.13-0.1.7-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.13/0.9.7/scalajs-dom_sjs0.6_2.13-0.9.7-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/com/lihaoyi/scalatags_sjs0.6_2.13/0.7.0/scalatags_sjs0.6_2.13-0.7.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.13/0.9.7/scalajs-dom_sjs0.6_2.13-0.9.7-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/lihaoyi/scalatags_sjs0.6_2.13/0.7.0/scalatags_sjs0.6_2.13-0.7.0-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.13/0.6.28/scalajs-library_2.13-0.6.28-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.13/0.6.28/scalajs-library_2.13-0.6.28-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_sjs0.6_2.13/0.1.7/sourcecode_sjs0.6_2.13-0.1.7-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_sjs0.6_2.13/0.1.7/sourcecode_sjs0.6_2.13-0.1.7-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.13/0.6.28/scalajs-test-interface_2.13-0.6.28-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.13/0.6.28/scalajs-test-interface_2.13-0.6.28-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/lihaoyi/scalatags_sjs0.6_2.13/0.7.0/scalatags_sjs0.6_2.13-0.7.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.13/0.9.7/scalajs-dom_sjs0.6_2.13-0.9.7-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_sjs0.6_2.13/0.1.7/sourcecode_sjs0.6_2.13-0.1.7-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/lihaoyi/scalatags_sjs0.6_2.13/0.7.0/scalatags_sjs0.6_2.13-0.7.0-sources.jar
-[info] 	[SUCCESSFUL ] com.lihaoyi#scalatags_sjs0.6_2.13;0.7.0!scalatags_sjs0.6_2.13.jar(src) (447ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-lang/scala-reflect/2.13.0/srcs/scala-reflect-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.0/scala-reflect-2.13.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.13/0.6.28/scalajs-test-interface_2.13-0.6.28-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_sjs0.6_2.13/0.1.7/sourcecode_sjs0.6_2.13-0.1.7-sources.jar
-[info] 	[SUCCESSFUL ] com.lihaoyi#sourcecode_sjs0.6_2.13;0.1.7!sourcecode_sjs0.6_2.13.jar(src) (478ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-lang/scala-compiler/2.13.0/srcs/scala-compiler-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.0/scala-compiler-2.13.0-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-js/scalajs-dom_sjs0.6_2.13/0.9.7/scalajs-dom_sjs0.6_2.13-0.9.7-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-js#scalajs-dom_sjs0.6_2.13;0.9.7!scalajs-dom_sjs0.6_2.13.jar(src) (480ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-js/scalajs-compiler_2.13.0/0.6.28/srcs/scalajs-compiler_2.13.0-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.13.0/0.6.28/scalajs-compiler_2.13.0-0.6.28-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.13/0.6.28/scalajs-library_2.13-0.6.28-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-js/scalajs-test-interface_2.13/0.6.28/scalajs-test-interface_2.13-0.6.28-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-js#scalajs-test-interface_2.13;0.6.28!scalajs-test-interface_2.13.jar(src) (533ms)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.13.0!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-dom_sjs0.6_2.13;0.9.7!scalajs-dom_sjs0.6_2.13.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-library_2.13;0.6.28!scalajs-library_2.13.jar(src)
+[debug] 	[NOT REQUIRED] com.lihaoyi#sourcecode_sjs0.6_2.13;0.1.7!sourcecode_sjs0.6_2.13.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-test-interface_2.13;0.6.28!scalajs-test-interface_2.13.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.eclipse.jetty/jetty-continuation/8.1.16.v20140903/srcs/jetty-continuation-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/8.1.16.v20140903/jetty-continuation-8.1.16.v20140903-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-js/scalajs-library_2.13/0.6.28/scalajs-library_2.13-0.6.28-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-js#scalajs-library_2.13;0.6.28!scalajs-library_2.13.jar(src) (549ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.eclipse.jetty/jetty-io/8.1.16.v20140903/srcs/jetty-io-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.16.v20140903/jetty-io-8.1.16.v20140903-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.13.0/0.6.28/scalajs-compiler_2.13.0-0.6.28-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.0/scala-reflect-2.13.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.13.0/0.6.28/scalajs-compiler_2.13.0-0.6.28-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.0/scala-reflect-2.13.0-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/8.1.16.v20140903/jetty-continuation-8.1.16.v20140903-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/8.1.16.v20140903/jetty-continuation-8.1.16.v20140903-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.16.v20140903/jetty-io-8.1.16.v20140903-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.16.v20140903/jetty-io-8.1.16.v20140903-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.13.0!scala-library.jar(src) (746ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.eclipse.jetty/jetty-websocket/8.1.16.v20140903/srcs/jetty-websocket-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-websocket/8.1.16.v20140903/jetty-websocket-8.1.16.v20140903-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.13.0/0.6.28/scalajs-compiler_2.13.0-0.6.28-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/8.1.16.v20140903/jetty-continuation-8.1.16.v20140903-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.16.v20140903/jetty-io-8.1.16.v20140903-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-js/scalajs-compiler_2.13.0/0.6.28/scalajs-compiler_2.13.0-0.6.28-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-js#scalajs-compiler_2.13.0;0.6.28!scalajs-compiler_2.13.0.jar(src) (364ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.eclipse.jetty/jetty-server/8.1.16.v20140903/srcs/jetty-server-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/8.1.16.v20140903/jetty-server-8.1.16.v20140903-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/8.1.16.v20140903/jetty-continuation-8.1.16.v20140903-sources.jar
-[info] 	[SUCCESSFUL ] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar(src) (343ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.eclipse.jetty/jetty-util/8.1.16.v20140903/srcs/jetty-util-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.16.v20140903/jetty-util-8.1.16.v20140903-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-websocket/8.1.16.v20140903/jetty-websocket-8.1.16.v20140903-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-websocket/8.1.16.v20140903/jetty-websocket-8.1.16.v20140903-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/8.1.16.v20140903/jetty-io-8.1.16.v20140903-sources.jar
-[info] 	[SUCCESSFUL ] org.eclipse.jetty#jetty-io;8.1.16.v20140903!jetty-io.jar(src) (363ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.eclipse.jetty.orbit/javax.servlet/3.0.0.v201112011016/srcs/javax.servlet-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.16.v20140903/jetty-util-8.1.16.v20140903-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.16.v20140903/jetty-util-8.1.16.v20140903-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/8.1.16.v20140903/jetty-server-8.1.16.v20140903-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/8.1.16.v20140903/jetty-server-8.1.16.v20140903-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-websocket/8.1.16.v20140903/jetty-websocket-8.1.16.v20140903-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.0/scala-reflect-2.13.0-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-websocket/8.1.16.v20140903/jetty-websocket-8.1.16.v20140903-sources.jar
-[info] 	[SUCCESSFUL ] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar(src) (569ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.eclipse.jetty/jetty-http/8.1.16.v20140903/srcs/jetty-http-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.16.v20140903/jetty-http-8.1.16.v20140903-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.0/scala-reflect-2.13.0-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.13.0!scala-reflect.jar(src) (908ms)
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.0/scala-compiler-2.13.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.0/scala-compiler-2.13.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/8.1.16.v20140903/jetty-server-8.1.16.v20140903-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.16.v20140903/jetty-http-8.1.16.v20140903-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.16.v20140903/jetty-http-8.1.16.v20140903-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.16.v20140903/jetty-util-8.1.16.v20140903-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/8.1.16.v20140903/jetty-server-8.1.16.v20140903-sources.jar
-[info] 	[SUCCESSFUL ] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar(src) (605ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/8.1.16.v20140903/jetty-util-8.1.16.v20140903-sources.jar
-[info] 	[SUCCESSFUL ] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar(src) (623ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016-sources.jar
-[info] 	[SUCCESSFUL ] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(src) (611ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.16.v20140903/jetty-http-8.1.16.v20140903-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/8.1.16.v20140903/jetty-http-8.1.16.v20140903-sources.jar
-[info] 	[SUCCESSFUL ] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar(src) (392ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.0/scala-compiler-2.13.0-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.0/scala-compiler-2.13.0-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.13.0!scala-compiler.jar(src) (1453ms)
-[debug] :: resolution report :: resolve 34ms :: artifacts dl 1934ms
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.13.0;0.6.28!scalajs-compiler_2.13.0.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.13.0!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.13.0!scala-reflect.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.16.v20140903!jetty-io.jar(src)
+[debug] 	[NOT REQUIRED] com.lihaoyi#scalatags_sjs0.6_2.13;0.7.0!scalatags_sjs0.6_2.13.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar(src)
+[debug] :: resolution report :: resolve 92ms :: artifacts dl 3ms
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT compile produced in /Users/ryanmehri/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-compile.xml
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT runtime produced in /Users/ryanmehri/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-runtime.xml
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT test produced in /Users/ryanmehri/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-test.xml
@@ -1428,4 +1332,4 @@
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT pom produced in /Users/ryanmehri/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-pom.xml
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT scala-tool produced in /Users/ryanmehri/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-scala-tool.xml
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT phantom-js-jetty produced in /Users/ryanmehri/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-phantom-js-jetty.xml
-[debug] 	resolve done (34ms resolve - 1934ms download)
+[debug] 	resolve done (92ms resolve - 3ms download)

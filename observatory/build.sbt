@@ -26,6 +26,9 @@ libraryDependencies ++= Seq(
   "com.novocode" % "junit-interface" % "0.11" % Test
 )
 
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.1.0"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.0" % "test"
+
 testOptions in Test += Tests.Argument(TestFrameworks.JUnit, "-a", "-v", "-s")
 
 parallelExecution in Test := false // So that tests are executed for each milestone, one after the other

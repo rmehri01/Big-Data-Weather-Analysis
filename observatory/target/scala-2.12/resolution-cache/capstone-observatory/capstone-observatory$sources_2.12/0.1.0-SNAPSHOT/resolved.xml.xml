@@ -4,7 +4,7 @@
 		module="capstone-observatory$sources_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20191223184849"
+		publication="20191223211952"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>
@@ -201,10 +201,6 @@
 			<artifact name="gigahorse-okhttp_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
-		<dependency org="com.google.javascript" name="closure-compiler-externs" rev="v20190513" transitive="false" conf="compile->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
-			<artifact name="closure-compiler-externs" type="src" ext="jar" conf="*" e:classifier="sources"/>
-			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
-		</dependency>
 		<dependency org="com.geirsson" name="coursier-small_2.12" rev="1.1.0" transitive="false" conf="compile->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
 			<artifact name="coursier-small_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
@@ -299,10 +295,6 @@
 		</dependency>
 		<dependency org="org.scala-js" name="scalajs-ir_2.12" rev="0.6.28" transitive="false" conf="compile->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master" info.apiURL="http://www.scala-js.org/api/scalajs-ir/0.6.28/">
 			<artifact name="scalajs-ir_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
-			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
-		</dependency>
-		<dependency org="org.webjars" name="envjs" rev="1.2" transitive="false" conf="compile->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;runtime->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master">
-			<artifact name="envjs" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="com.typesafe.play" name="play-json_2.12" rev="2.6.9" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master">
