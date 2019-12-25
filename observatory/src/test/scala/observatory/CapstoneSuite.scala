@@ -1,7 +1,6 @@
 package observatory
 
 import org.junit.Assert._
-import org.scalacheck.Test
 
 class CapstoneSuite
   extends ExtractionTest
