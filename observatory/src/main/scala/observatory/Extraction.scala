@@ -1,13 +1,18 @@
 package observatory
 
 import java.time.LocalDate
-
-import org.apache.spark.rdd.RDD
+import scala.io.Source
 
 /**
   * 1st milestone: data extraction
   */
 object Extraction extends ExtractionInterface {
+
+  import org.apache.spark.rdd.RDD
+  import org.apache.spark.{SparkConf, SparkContext}
+
+  val conf: SparkConf = new SparkConf().setAppName("Weather Analysis").setMaster("local[4]")
+  val spark: SparkContext = new SparkContext(conf)
 
   /**
     * @param year             Year number
@@ -20,22 +25,17 @@ object Extraction extends ExtractionInterface {
   }
 
   def sparkLocateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): RDD[(LocalDate, Location, Temperature)] = {
-    import org.apache.spark.rdd.RDD
-    import org.apache.spark.{SparkConf, SparkContext}
 
-    val conf: SparkConf = new SparkConf().setAppName("Wikipedia Language Ranker").setMaster("local[4]")
-    val spark: SparkContext = new SparkContext(conf)
-
-    case class Data(month: Int, day: Int, lat: Double, lon: Double, temp: Double)
-
-    val stationsRDD = spark.textFile(stationsFile)
+    val stationsRDD = spark.parallelize(Source.fromInputStream(getClass.getResourceAsStream(stationsFile), "utf-8").getLines().toSeq)
       .filter(line => line.split(",").length >= 3) // only want to be missing WBAN
       .map { line =>
         val arr = line.split(",")
         ((arr(0), arr(1)), (arr(2).toDouble, arr(3).toDouble))
       }
 
-    val temperaturesRDD = spark.textFile(temperaturesFile)
+    // spark.textFile(temperaturesFile) also works
+
+    val temperaturesRDD = spark.parallelize(Source.fromInputStream(getClass.getResourceAsStream(temperaturesFile), "utf-8").getLines().toSeq)
       .filter(line => line.split(",").length >= 4)
       .map { line =>
         val arr = line.split(",")
@@ -58,7 +58,14 @@ object Extraction extends ExtractionInterface {
     * @return A sequence containing, for each location, the average temperature over the year.
     */
   def locationYearlyAverageRecords(records: Iterable[(LocalDate, Location, Temperature)]): Iterable[(Location, Temperature)] = {
-    ???
+    sparkLocationYearlyAverageRecords(spark.parallelize(records.toSeq)).collect()
+  }
+
+  def sparkLocationYearlyAverageRecords(records: RDD[(LocalDate, Location, Temperature)]): RDD[(Location, Temperature)] = {
+    records.map { case (date, location, temp) => ((location, date.getYear), (temp, 1)) }
+      .reduceByKey { case ((t1, i1), (t2, i2)) => (t1 + t2, i1 + i2) }
+      .mapValues { case (t, num) => t / num.toDouble }
+      .map { case ((location, _), avg) => (location, avg) }
   }
 
 }
