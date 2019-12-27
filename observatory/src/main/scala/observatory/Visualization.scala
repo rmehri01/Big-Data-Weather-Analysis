@@ -52,14 +52,20 @@ object Visualization extends VisualizationInterface {
     * @return The color that corresponds to `value`, according to the color scale defined by `points`
     */
   def interpolateColor(points: Iterable[(Temperature, Color)], value: Temperature): Color = {
-    val differences = points.map { case (temp, color) => (temp - value, color) }
-    val (negatives, positives) = differences.partition(_._1 < 0)
-    val (t1, c1) = negatives.maxBy(_._1)
-    val (t2, c2) = positives.minBy(_._1)
-    val scale = value / (t2 - t1)
-    Color(((1 - scale) * c1.red + scale * c2.red).toInt, // not sure
-      ((1 - scale) * c1.green + scale * c2.green).toInt,
-      ((1 - scale) * c1.blue + scale * c2.blue).toInt)
+    val maxTemp = points.maxBy(_._1)
+    val minTemp = points.minBy(_._1)
+    if (value >= maxTemp._1) maxTemp._2
+    else if (value <= minTemp._1) minTemp._2
+    else {
+      val differences = points.map { case (temp, color) => (temp - value, temp, color) }
+      val (negatives, positives) = differences.partition(_._1 < 0)
+      val (d1, t1, c1) = negatives.maxBy(_._1)
+      val (d2, t2, c2) = positives.minBy(_._1)
+      val scale = (value - t1) / (t2 - t1)
+      Color(((1 - scale) * c1.red + scale * c2.red).round.toInt,
+        ((1 - scale) * c1.green + scale * c2.green).round.toInt,
+        ((1 - scale) * c1.blue + scale * c2.blue).round.toInt)
+    }
   }
 
   /**
@@ -79,9 +85,9 @@ object Visualization extends VisualizationInterface {
     val pixels = for {
       y <- 90 to -89
       x <- -180 to 179
-      filtered = joined.values.filter { case (location, _) => location.lat == y && location.lon == x }.collect()
+      filtered = joined.values.filter { case (location, _) => location.lat == y && location.lon == x }.collect() // not the best
       headColor = filtered.head._2
-    } yield if (filtered.nonEmpty) Pixel(headColor.red, headColor.green, headColor.blue, 1) else Pixel(0, 0, 0, 1)
+    } yield if (filtered.nonEmpty) Pixel(headColor.red, headColor.green, headColor.blue, 1) else Pixel(255, 255, 255, 1) // not sure
 
     Image.apply(360, 180, pixels.toArray)
   }
