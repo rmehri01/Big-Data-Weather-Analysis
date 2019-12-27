@@ -74,23 +74,29 @@ object Visualization extends VisualizationInterface {
     * @return A 360×180 image where each pixel shows the predicted temperature at its location
     */
   def visualize(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)]): Image = {
-    import Extraction.spark
-    sparkVisualize(spark.parallelize(temperatures.toSeq), spark.parallelize(colors.toSeq))
-  }
-
-  def sparkVisualize(temperatures: RDD[(Location, Temperature)], colors: RDD[(Temperature, Color)]): Image = {
-    val reversedTemps = temperatures.map { case (location, temperature) => (temperature, location) }
-    val joined = reversedTemps.partitionBy(new RangePartitioner(4, reversedTemps))
-      .join(colors)
+    //    import Extraction.spark
+    //    sparkVisualize(spark.parallelize(temperatures.toSeq), spark.parallelize(colors.toSeq))
     val pixels = for {
-      y <- 90 to -89
+      y <- 90 to -89 by -1
       x <- -180 to 179
-      filtered = joined.values.filter { case (location, _) => location.lat == y && location.lon == x }.collect() // not the best
-      headColor = filtered.head._2
-    } yield if (filtered.nonEmpty) Pixel(headColor.red, headColor.green, headColor.blue, 1) else Pixel(255, 255, 255, 1) // not sure
+      filtered = temperatures.filter { case (location, _) => location.lat == y && location.lon == x } // not the best
+      headPixel = filtered.headOption match {
+        case None => Pixel(255, 255, 255, 128)
+        case Some((_, temp)) =>
+          val interpolated = interpolateColor(colors, temp)
+          Pixel(interpolated.red, interpolated.green, interpolated.blue, 255)
+      }
+    } yield headPixel
 
     Image.apply(360, 180, pixels.toArray)
   }
+
+  //  def sparkVisualize(temperatures: RDD[(Location, Temperature)], colors: RDD[(Temperature, Color)]): Image = {
+  //    //    val reversedTemps = temperatures.map { case (location, temperature) => (temperature, location) }
+  //    //    val joined = reversedTemps.partitionBy(new RangePartitioner(4, reversedTemps))
+  //    //      .join(colors)
+  //
+  //  }
 
 }
 
