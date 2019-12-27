@@ -14,13 +14,13 @@ object Visualization extends VisualizationInterface {
     * @param location     Location where to predict the temperature
     * @return The predicted temperature at `location`
     */
-  def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
+  def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = { // might want to move to spark
     def distance(l1: Location, l2: Location) = {
       import Math._
 
       val RADIUS = 6371 // radius of earth in km
-      val (lat1, lon1) = (l1.lat, l1.lon)
-      val (lat2, lon2) = (l2.lat, l2.lon)
+      val (lat1, lon1) = (toRadians(l1.lat), toRadians(l1.lon))
+      val (lat2, lon2) = (toRadians(l2.lat), toRadians(l2.lon))
 
       val centralAngle =
         if (lat1 == lat2 && lon1 == lon2) 0
@@ -36,7 +36,7 @@ object Visualization extends VisualizationInterface {
     def inverseDistance = {
       val inversePairs = for {
         (dist, temp) <- withDistances
-        inverseDistance = 1d / Math.pow(dist, 5)
+        inverseDistance = 1d / Math.pow(dist, 2)
       } yield (inverseDistance * temp, inverseDistance)
       val (numerator, denominator) = inversePairs.unzip
       numerator.sum / denominator.sum
