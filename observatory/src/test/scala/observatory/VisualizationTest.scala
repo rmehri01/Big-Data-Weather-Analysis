@@ -23,7 +23,8 @@ trait VisualizationTest extends MilestoneSuite {
     (-15d, Color(0, 0, 255)),
     (-27d, Color(255, 0, 255)),
     (-50d, Color(33, 0, 107)),
-    (-60d, Color(0, 0, 0)))
+    (-60d, Color(0, 0, 0))
+  )
 
   @Test def `predict color`(): Unit = {
     val result = interpolateColor(points, -7.5)
