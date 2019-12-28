@@ -27,4 +27,8 @@ trait InteractionTest extends MilestoneSuite {
     val result = tile(temps, points, Tile(0, 0, 0))
     result.output(new java.io.File("target/some-image2.png"))
   }
+
+  @Test def `generated tiles test`(): Unit = {
+    generateTiles(Iterable((2001, 1), (2002, 2)), (year: Year, tile: Tile, data: Int) => println((year, tile, data)))
+  }
 }

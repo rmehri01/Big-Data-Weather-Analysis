@@ -49,7 +49,31 @@ object Interaction extends InteractionInterface {
                            yearlyData: Iterable[(Year, Data)],
                            generateImage: (Year, Tile, Data) => Unit
                          ): Unit = {
-    ???
+    //    def loop(currentTile: Tile): Unit = {
+    //      currentTile.zoom match {
+    //        case 3 => yearlyData.foreach { case (year, data) => generateImage(year, currentTile, data) }
+    //        case _ =>
+    //          yearlyData.foreach { case (year, data) => generateImage(year, currentTile, data) }
+    //          loop(Tile(currentTile.x, currentTile.y, currentTile.zoom + 1))
+    //          loop(Tile(currentTile.x + 1, currentTile.y, currentTile.zoom + 1))
+    //          loop(Tile(currentTile.x, currentTile.y + 1, currentTile.zoom + 1))
+    //          loop(Tile(currentTile.x + 1, currentTile.y + 1, currentTile.zoom + 1)) // not tail recursive, could use work list
+    //      }
+    //    }
+    //
+    //    loop(Tile(0, 0, 0))
+
+    @scala.annotation.tailrec
+    def loop(currentZoom: Int): Unit = {
+      for (y <- 0 until Math.pow(2, currentZoom).toInt; x <- 0 until Math.pow(2, currentZoom).toInt)
+        yearlyData.foreach { case (year, data) => generateImage(year, Tile(x, y, currentZoom), data) }
+      currentZoom match {
+        case 3 =>
+        case _ => loop(currentZoom + 1)
+      }
+    }
+
+    loop(0)
   }
 
 }
