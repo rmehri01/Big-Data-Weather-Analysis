@@ -18,13 +18,13 @@ object Visualization extends VisualizationInterface {
     def distance(l1: Location, l2: Location) = {
       import Math._
 
-      val RADIUS = 6371 // radius of earth in km
+      val RADIUS = 6371d // radius of earth in km
       val (lat1, lon1) = (toRadians(l1.lat), toRadians(l1.lon))
       val (lat2, lon2) = (toRadians(l2.lat), toRadians(l2.lon))
 
       val centralAngle =
         if (lat1 == lat2 && lon1 == lon2) 0
-        else if (abs(lat1) == abs(lat2) && abs(lon1 - lon2) == 180) PI
+        else if (-toDegrees(lat1) == toDegrees(lat2) && abs(toDegrees(lon1) - toDegrees(lon2)) == 180d) PI
         else acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(abs(lon1 - lon2)))
 
       RADIUS * centralAngle
@@ -36,7 +36,7 @@ object Visualization extends VisualizationInterface {
     def inverseDistance = {
       val inversePairs = for {
         (dist, temp) <- withDistances
-        inverseDistance = 1d / Math.pow(dist, 2)
+        inverseDistance = 1d / Math.pow(dist, 2.5)
       } yield (inverseDistance * temp, inverseDistance)
       val (numerator, denominator) = inversePairs.unzip
       numerator.sum / denominator.sum
@@ -77,7 +77,7 @@ object Visualization extends VisualizationInterface {
     //    import Extraction.spark
     //    sparkVisualize(spark.parallelize(temperatures.toSeq), spark.parallelize(colors.toSeq))
     val pixels = for {
-      y <- 90 to -89 by -1
+      y <- 90 to -89 by -1 // check boundaries (-90, 180)
       x <- -180 to 179
       filtered = temperatures.filter { case (location, _) => location.lat == y && location.lon == x } // not the best
       headPixel = filtered.headOption match {
