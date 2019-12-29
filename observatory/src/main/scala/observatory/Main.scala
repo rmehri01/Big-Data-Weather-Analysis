@@ -1,8 +1,8 @@
 package observatory
 
-import observatory.Extraction._
-import observatory.Interaction._
 import org.apache.log4j.{Level, Logger}
+import Extraction._
+import Interaction._
 import org.apache.spark.rdd.RDD
 
 object Main extends App {
@@ -26,15 +26,14 @@ object Main extends App {
     (-60d, Color(0, 0, 0))
   )
 
-  val generateImage = (year: Year, inputTile: Tile, data: RDD[(Location, Temperature)]) => {
-    val (x, y, zoom) = (inputTile.x, inputTile.y, inputTile.zoom)
-    val dir = new java.io.File(s"target/temperatures/$year/$zoom/$x-$y")
-    val result = sparkTile(data, tempColors, inputTile)
-    if (!dir.exists()) dir.mkdir() // maybe s
-    result.output(new java.io.File(s"target/temperatures/$year/$zoom/$x-$y.png"))
-    ()
-  }
+    val generateImage = (year: Year, inputTile: Tile, data: RDD[(Location, Temperature)]) => {
+      val (x, y, zoom) = (inputTile.x, inputTile.y, inputTile.zoom)
+      val dir = new java.io.File(s"target/temperatures/$year/$zoom/$x-$y")
+      val result = tile(data.collect(), tempColors, inputTile)
+      if (!dir.exists()) dir.mkdir() // maybe s
+      result.output(new java.io.File(s"target/temperatures/$year/$zoom/$x-$y.png"))
+      ()
+    }
 
-  generateTiles(yearlyData, generateImage)
-
+    generateTiles(yearlyData, generateImage)
 }

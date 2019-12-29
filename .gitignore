@@ -1,2 +1,7 @@
 *.class
 *.log
+/src/main/resources/
+/src/test/resources/
+/target/
+/capstone-ui/target/
+.metals

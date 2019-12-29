@@ -25,7 +25,7 @@ object Extraction extends ExtractionInterface {
 
   def sparkLocateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): RDD[(LocalDate, Location, Temperature)] = {
 
-    val stationsRDD = spark.textFile(s"src/main/resources/$stationsFile")
+    val stationsRDD = spark.textFile(s"src/main/resources$stationsFile")
       .filter(line => line.split(",").length == 4) // only want to be missing one field
       .map { line =>
         val arr = line.split(",")
@@ -34,7 +34,7 @@ object Extraction extends ExtractionInterface {
 
     // spark.textFile(temperaturesFile) also works
 
-    val temperaturesRDD = spark.textFile(s"src/main/resources/$temperaturesFile")
+    val temperaturesRDD = spark.textFile(s"src/main/resources$temperaturesFile")
       .filter(line => line.split(",").length == 5)
       .map { line =>
         val arr = line.split(",")
