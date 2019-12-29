@@ -1,8 +1,6 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
-import Extraction.spark
-import org.apache.spark.rdd.RDD
 
 /**
   * 2nd milestone: basic visualization
@@ -15,10 +13,6 @@ object Visualization extends VisualizationInterface {
     * @return The predicted temperature at `location`
     */
   def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
-    sparkPredictTemperature(spark.parallelize(temperatures.toSeq), location)
-  }
-
-  def sparkPredictTemperature(temperatures: RDD[(Location, Temperature)], location: Location): Temperature = {
     def distance(l1: Location, l2: Location) = {
       import Math._
 
@@ -34,26 +28,19 @@ object Visualization extends VisualizationInterface {
       RADIUS * centralAngle
     }
 
-    val withDistances = temperatures.map { case (loc, temp) => (distance(loc, location), temp) }
-    val filteredDistances = withDistances.filter(_._1 < 1)
+    val withDistances = temperatures.map { case (loc, temp) => (distance(loc, location), temp) }.par
+    lazy val filteredDistances = withDistances.filter(_._1 < 1)
 
     def inverseDistance = {
-//      val inversePairs = for {
-//        (dist, temp) <- withDistances
-//        inverseDistance = 1d / Math.pow(dist, 2.5)
-//      } yield (inverseDistance * temp, inverseDistance)
-//      val (numerator, denominator) = inversePairs.unzip
-//      numerator.sum / denominator.sum
-
-      val bothSums = withDistances.map { case (dist, temp) =>
-        val inverseDistance = 1d / Math.pow(dist, 2.5)
-        (inverseDistance * temp, inverseDistance)
-      }.reduce((first, second) => (first._1 + second._1, first._2 + second._2))
-
-      bothSums._1 / bothSums._2
+      val inversePairs = for {
+        (dist, temp) <- withDistances
+        inverseDistance = 1d / Math.pow(dist, 2.5)
+      } yield (inverseDistance * temp, inverseDistance)
+      val (numerator, denominator) = inversePairs.unzip
+      numerator.sum / denominator.sum
     }
 
-    if (!filteredDistances.isEmpty()) filteredDistances.first()._2
+    if (filteredDistances.nonEmpty) filteredDistances.head._2
     else inverseDistance
   }
 
@@ -92,7 +79,9 @@ object Visualization extends VisualizationInterface {
       x <- -180 to 179
       filtered = temperatures.filter { case (location, _) => location.lat == y && location.lon == x } // not the best
       headPixel = filtered.headOption match {
-        case None => Pixel(255, 255, 255, 128)
+        case None =>
+          val interpolated = interpolateColor(colors, predictTemperature(temperatures, Location(y, x)))
+          Pixel(interpolated.red, interpolated.green, interpolated.blue, 255)
         case Some((_, temp)) =>
           val interpolated = interpolateColor(colors, temp)
           Pixel(interpolated.red, interpolated.green, interpolated.blue, 255)

@@ -41,9 +41,9 @@ object Visualization2 extends Visualization2Interface {
     import Interaction.tileLocation
     import Visualization._
     val pixels = for {
-      y <- 0 until 256
-      x <- 0 until 256
-      curLocation = tileLocation(Tile(tile.x * 256 + x, tile.y * 256 + y, tile.zoom + 8))
+      y <- (0 until 128).par
+      x <- (0 until 128).par
+      curLocation = tileLocation(Tile(tile.x * 128 + x, tile.y * 128 + y, tile.zoom + 7))
       d00 = grid(GridLocation(curLocation.lat.toInt, curLocation.lon.toInt))
       d01 = grid(GridLocation(curLocation.lat.toInt, (curLocation.lon + 1).toInt))
       d10 = grid(GridLocation((curLocation.lat + 1).toInt, curLocation.lon.toInt))
@@ -52,7 +52,7 @@ object Visualization2 extends Visualization2Interface {
       predictedColor = interpolateColor(colors, bilinearInterpolation(cellPoint, d00, d01, d10, d11))
     } yield Pixel(predictedColor.red, predictedColor.green, predictedColor.blue, 127)
 
-    Image(256, 256, pixels.toArray)
+    Image(128, 128, pixels.toArray).scale(2)
   }
 
 }

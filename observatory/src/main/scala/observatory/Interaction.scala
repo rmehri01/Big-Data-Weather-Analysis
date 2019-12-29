@@ -1,8 +1,6 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
-import org.apache.spark.rdd.RDD
-import Extraction.spark
 
 /**
   * 3rd milestone: interactive visualization
@@ -28,19 +26,15 @@ object Interaction extends InteractionInterface {
     * @return A 256×256 image showing the contents of the given tile
     */
   def tile(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
-    sparkTile(spark.parallelize(temperatures.toSeq), colors, tile)
-  }
-
-  def sparkTile(temperatures: RDD[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
     import Visualization._
     val pixels = for {
-      y <- 0 until 256
-      x <- 0 until 256
-      curLocation = tileLocation(Tile(tile.x * 256 + x, tile.y * 256 + y, tile.zoom + 8))
-      predictedColor = interpolateColor(colors, sparkPredictTemperature(temperatures, curLocation))
+      y <- (0 until 128).par
+      x <- (0 until 128).par
+      curLocation = tileLocation(Tile(tile.x * 128 + x, tile.y * 128 + y, tile.zoom + 7))
+      predictedColor = interpolateColor(colors, predictTemperature(temperatures, curLocation))
     } yield Pixel(predictedColor.red, predictedColor.green, predictedColor.blue, 127)
 
-    Image(256, 256, pixels.toArray)
+    Image(128, 128, pixels.toArray).scale(2)
   }
 
   /**
@@ -55,24 +49,10 @@ object Interaction extends InteractionInterface {
                            yearlyData: Iterable[(Year, Data)],
                            generateImage: (Year, Tile, Data) => Unit
                          ): Unit = {
-    //    def loop(currentTile: Tile): Unit = {
-    //      currentTile.zoom match {
-    //        case 3 => yearlyData.foreach { case (year, data) => generateImage(year, currentTile, data) }
-    //        case _ =>
-    //          yearlyData.foreach { case (year, data) => generateImage(year, currentTile, data) }
-    //          loop(Tile(currentTile.x, currentTile.y, currentTile.zoom + 1))
-    //          loop(Tile(currentTile.x + 1, currentTile.y, currentTile.zoom + 1))
-    //          loop(Tile(currentTile.x, currentTile.y + 1, currentTile.zoom + 1))
-    //          loop(Tile(currentTile.x + 1, currentTile.y + 1, currentTile.zoom + 1)) // not tail recursive, could use work list
-    //      }
-    //    }
-    //
-    //    loop(Tile(0, 0, 0))
-
     @scala.annotation.tailrec
     def loop(currentZoom: Int): Unit = {
       for (y <- 0 until Math.pow(2, currentZoom).toInt; x <- 0 until Math.pow(2, currentZoom).toInt)
-        yearlyData.foreach { case (year, data) => generateImage(year, Tile(x, y, currentZoom), data) }
+        yearlyData.par.foreach { case (year, data) => generateImage(year, Tile(x, y, currentZoom), data) }
       currentZoom match {
         case 3 =>
         case _ => loop(currentZoom + 1)
