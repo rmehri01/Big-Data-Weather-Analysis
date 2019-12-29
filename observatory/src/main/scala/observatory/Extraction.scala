@@ -1,7 +1,6 @@
 package observatory
 
 import java.time.LocalDate
-import scala.io.Source
 
 /**
   * 1st milestone: data extraction
@@ -26,21 +25,21 @@ object Extraction extends ExtractionInterface {
 
   def sparkLocateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): RDD[(LocalDate, Location, Temperature)] = {
 
-    val stationsRDD = spark.parallelize(Source.fromInputStream(getClass.getResourceAsStream(stationsFile), "utf-8").getLines().toSeq)
-      .filter(line => line.split(",").length >= 3) // only want to be missing WBAN
+    val stationsRDD = spark.textFile(s"src/main/resources/$stationsFile")
+      .filter(line => line.split(",").length == 4) // only want to be missing one field
       .map { line =>
         val arr = line.split(",")
         ((arr(0), arr(1)), (arr(2).toDouble, arr(3).toDouble))
-      }
+      }.persist()
 
     // spark.textFile(temperaturesFile) also works
 
-    val temperaturesRDD = spark.parallelize(Source.fromInputStream(getClass.getResourceAsStream(temperaturesFile), "utf-8").getLines().toSeq)
-      .filter(line => line.split(",").length >= 4)
+    val temperaturesRDD = spark.textFile(s"src/main/resources/$temperaturesFile")
+      .filter(line => line.split(",").length == 5)
       .map { line =>
         val arr = line.split(",")
         ((arr(0), arr(1)), (arr(2).toInt, arr(3).toInt, arr(4).toDouble))
-      }
+      }.persist()
 
     def toCelsius(num: Double): Double = roundToTens((num - 32) * 5 / 9)
 

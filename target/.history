@@ -1,0 +1,7 @@
+run
+run Main
+runMain
+run Main.scala
+ls
+run
+run /Users/ryanmehri/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/src/main/scala/observatory/Main.scala

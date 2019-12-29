@@ -1,7 +1,7 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
-import org.apache.spark.RangePartitioner
+import Extraction.spark
 import org.apache.spark.rdd.RDD
 
 /**
@@ -14,7 +14,11 @@ object Visualization extends VisualizationInterface {
     * @param location     Location where to predict the temperature
     * @return The predicted temperature at `location`
     */
-  def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = { // might want to move to spark
+  def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
+    sparkPredictTemperature(spark.parallelize(temperatures.toSeq), location)
+  }
+
+  def sparkPredictTemperature(temperatures: RDD[(Location, Temperature)], location: Location): Temperature = {
     def distance(l1: Location, l2: Location) = {
       import Math._
 
@@ -34,15 +38,22 @@ object Visualization extends VisualizationInterface {
     val filteredDistances = withDistances.filter(_._1 < 1)
 
     def inverseDistance = {
-      val inversePairs = for {
-        (dist, temp) <- withDistances
-        inverseDistance = 1d / Math.pow(dist, 2.5)
-      } yield (inverseDistance * temp, inverseDistance)
-      val (numerator, denominator) = inversePairs.unzip
-      numerator.sum / denominator.sum
+//      val inversePairs = for {
+//        (dist, temp) <- withDistances
+//        inverseDistance = 1d / Math.pow(dist, 2.5)
+//      } yield (inverseDistance * temp, inverseDistance)
+//      val (numerator, denominator) = inversePairs.unzip
+//      numerator.sum / denominator.sum
+
+      val bothSums = withDistances.map { case (dist, temp) =>
+        val inverseDistance = 1d / Math.pow(dist, 2.5)
+        (inverseDistance * temp, inverseDistance)
+      }.reduce((first, second) => (first._1 + second._1, first._2 + second._2))
+
+      bothSums._1 / bothSums._2
     }
 
-    if (filteredDistances.nonEmpty) filteredDistances.head._2
+    if (!filteredDistances.isEmpty()) filteredDistances.first()._2
     else inverseDistance
   }
 
