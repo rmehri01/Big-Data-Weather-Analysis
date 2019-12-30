@@ -64,6 +64,8 @@ trait InteractionTest extends MilestoneSuite {
     //    generateImage(1975, Tile(0,0,0), yearlyData.head._2.collect())
 
     val result = tile(yearlyData.head._2.collect(), tempColors, Tile(0, 0, 0))
-    result.output(new java.io.File("target/some-image2.png"))
+    val dir = new java.io.File(s"target/temperatures/yeet/dab/")
+    if (!dir.exists()) dir.mkdirs()
+    result.output(new java.io.File("target/temperatures/yeet/dab/some-image2.png"))
   }
 }

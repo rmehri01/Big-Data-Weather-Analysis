@@ -30,7 +30,7 @@ object Extraction extends ExtractionInterface {
       .map { line =>
         val arr = line.split(",")
         ((arr(0), arr(1)), (arr(2).toDouble, arr(3).toDouble))
-      }.persist()
+      }
 
     // spark.textFile(temperaturesFile) also works
 
@@ -39,7 +39,7 @@ object Extraction extends ExtractionInterface {
       .map { line =>
         val arr = line.split(",")
         ((arr(0), arr(1)), (arr(2).toInt, arr(3).toInt, arr(4).toDouble))
-      }.persist()
+      }
 
     def toCelsius(num: Double): Double = roundToTens((num - 32) * 5 / 9)
 

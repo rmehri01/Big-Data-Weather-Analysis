@@ -11,7 +11,7 @@ object Main extends App {
 
   // Main for temperatures
   val yearlyData = for {
-    year <- 1975 to 1975
+    year <- 2015 to 2015
     resultOfYearlyAvgRecords = sparkLocationYearlyAverageRecords(sparkLocateTemperatures(year, "/stations.csv", s"/$year.csv"))
   } yield (year, resultOfYearlyAvgRecords)
 
@@ -28,9 +28,9 @@ object Main extends App {
 
     val generateImage = (year: Year, inputTile: Tile, data: RDD[(Location, Temperature)]) => {
       val (x, y, zoom) = (inputTile.x, inputTile.y, inputTile.zoom)
-      val dir = new java.io.File(s"target/temperatures/$year/$zoom/$x-$y")
+      val dir = new java.io.File(s"target/temperatures/$year/$zoom/")
       val result = tile(data.collect(), tempColors, inputTile)
-      if (!dir.exists()) dir.mkdir() // maybe s
+      if (!dir.exists()) dir.mkdirs()
       result.output(new java.io.File(s"target/temperatures/$year/$zoom/$x-$y.png"))
       ()
     }
