@@ -2176,7 +2176,7 @@ $c_Lobservatory_JSMain$.prototype.setupMap__Lobservatory_Signal__Lobservatory_Si
     })
   })(this, layer, urlSignal));
   new $c_Lobservatory_Signal().init___F0(expr);
-  map.addControl($g.L.control.zoom(new $c_Lleaflet_ZoomOptions().init___T("bottomright")));
+  map.addControl($g.L.control.zoom(new $c_Lleaflet_ZoomOptions().init___T("topleft")));
   var jsx$2 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body;
   var this$6 = $m_Lobservatory_Implicits$();
   jsx$2.appendChild(new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$6, mapElement).e$1);
@@ -4803,18 +4803,17 @@ $c_Lobservatory_Interaction2$.prototype.availableLayers__sci_Seq = (function() {
   return $as_sci_Seq(jsx$3.apply__sci_Seq__sc_SeqOps(new $c_sjsr_WrappedVarArgs().init___sjs_js_Array(array$2)))
 });
 $c_Lobservatory_Interaction2$.prototype.yearSelection__Lobservatory_Signal__Lobservatory_Signal__Lobservatory_Signal = (function(selectedLayer, sliderValue) {
-  var currSliderValue = $uI(sliderValue.apply__O());
-  var bound = $as_sci_Range(this.yearBounds__Lobservatory_Signal__Lobservatory_Signal(selectedLayer).apply__O());
-  var that = bound.min__s_math_Ordering__I($m_s_math_Ordering$Int$());
-  var x = ((currSliderValue > that) ? currSliderValue : that);
-  var that$1 = bound.max__s_math_Ordering__I($m_s_math_Ordering$Int$());
-  var clampedYear = ((x < that$1) ? x : that$1);
   $m_Lobservatory_Signal$();
-  var expr = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, clampedYear$1) {
+  var expr = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, selectedLayer$1, sliderValue$1) {
     return (function() {
-      return clampedYear$1
+      var bounds = $as_Lobservatory_Layer(selectedLayer$1.apply__O()).bounds$1;
+      var x = $uI(sliderValue$1.apply__O());
+      var that = bounds.start$4;
+      var x$1 = ((x > that) ? x : that);
+      var that$1 = bounds.end$4;
+      return ((x$1 < that$1) ? x$1 : that$1)
     })
-  })(this, clampedYear));
+  })(this, selectedLayer, sliderValue));
   return new $c_Lobservatory_Signal().init___F0(expr)
 });
 $c_Lobservatory_Interaction2$.prototype.yearBounds__Lobservatory_Signal__Lobservatory_Signal = (function(selectedLayer) {
@@ -4830,7 +4829,7 @@ $c_Lobservatory_Interaction2$.prototype.layerUrlPattern__Lobservatory_Signal__Lo
   $m_Lobservatory_Signal$();
   var expr = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, selectedLayer$1, selectedYear$1) {
     return (function() {
-      return (((("target/" + $as_Lobservatory_Layer(selectedLayer$1.apply__O()).layerName$1.id$1) + "/") + selectedYear$1.apply__O()) + "/{z}/{x}/{y}.png")
+      return (((("target/" + $as_Lobservatory_Layer(selectedLayer$1.apply__O()).layerName$1.id$1) + "/") + selectedYear$1.apply__O()) + "/{z}/{x}-{y}.png")
     })
   })(this, selectedLayer, selectedYear));
   return new $c_Lobservatory_Signal().init___F0(expr)
@@ -5363,6 +5362,11 @@ $c_jl_Character$.prototype.java$lang$Character$$charTypesFirst256__AB = (functio
 $c_jl_Character$.prototype.nonASCIIZeroDigitCodePoints__p1__AI = (function() {
   return (((((16 & this.bitmap$0$1) << 24) >> 24) === 0) ? this.nonASCIIZeroDigitCodePoints$lzycompute__p1__AI() : this.nonASCIIZeroDigitCodePoints$1)
 });
+$c_jl_Character$.prototype.toUpperCase__C__C = (function(c) {
+  var thiz = $as_T($g.String.fromCharCode(c));
+  var x = $as_T(thiz.toUpperCase());
+  return (65535 & $uI(x.charCodeAt(0)))
+});
 $c_jl_Character$.prototype.java$lang$Character$$charTypesFirst256$lzycompute__p1__AB = (function() {
   if (((((1 & this.bitmap$0$1) << 24) >> 24) === 0)) {
     var array = [15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 12, 24, 24, 24, 26, 24, 24, 24, 21, 22, 24, 25, 24, 20, 24, 24, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 24, 24, 25, 25, 25, 24, 24, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 21, 24, 22, 27, 23, 27, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 21, 25, 22, 25, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 12, 24, 26, 26, 26, 26, 28, 24, 27, 28, 5, 29, 25, 16, 28, 27, 28, 25, 11, 11, 27, 2, 24, 24, 27, 11, 5, 30, 11, 11, 11, 24, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 25, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 25, 2, 2, 2, 2, 2, 2, 2, 2];
@@ -5381,11 +5385,6 @@ $c_jl_Character$.prototype.java$lang$Character$$charTypesFirst256$lzycompute__p1
     this.bitmap$0$1 = (((1 | this.bitmap$0$1) << 24) >> 24)
   };
   return this.java$lang$Character$$charTypesFirst256$1
-});
-$c_jl_Character$.prototype.toUpperCase__C__C = (function(c) {
-  var thiz = $as_T($g.String.fromCharCode(c));
-  var x = $as_T(thiz.toUpperCase());
-  return (65535 & $uI(x.charCodeAt(0)))
 });
 $c_jl_Character$.prototype.uncompressDeltas__p1__AI__AI = (function(deltas) {
   var end = deltas.u.length;

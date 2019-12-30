@@ -34,7 +34,7 @@ object Visualization extends VisualizationInterface {
     def inverseDistance = {
       val inversePairs = for {
         (dist, temp) <- withDistances
-        inverseDistance = 1d / Math.pow(dist, 2.5)
+        inverseDistance = 1d / Math.pow(dist, 5)
       } yield (inverseDistance * temp, inverseDistance)
       val (numerator, denominator) = inversePairs.unzip
       numerator.sum / denominator.sum

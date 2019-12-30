@@ -53,11 +53,10 @@ object Interaction2 extends Interaction2Interface {
     *         in the `selectedLayer` bounds.
     */
   def yearSelection(selectedLayer: Signal[Layer], sliderValue: Signal[Year]): Signal[Year] = {
-    val currSliderValue = sliderValue()
-    val bound = yearBounds(selectedLayer)()
-    val clampedYear = currSliderValue.max(bound.min).min(bound.max)
-
-    Signal(clampedYear)
+    Signal({
+      val bounds = selectedLayer().bounds
+      sliderValue().max(bounds.start).min(bounds.end)
+    })
   }
 
   /**
@@ -66,7 +65,7 @@ object Interaction2 extends Interaction2Interface {
     * @return The URL pattern to retrieve tiles
     */
   def layerUrlPattern(selectedLayer: Signal[Layer], selectedYear: Signal[Year]): Signal[String] = {
-    Signal(s"target/${selectedLayer().layerName.id}/${selectedYear()}/{z}/{x}/{y}.png")
+    Signal(s"target/${selectedLayer().layerName.id}/${selectedYear()}/{z}/{x}-{y}.png")
   }
 
   /**
