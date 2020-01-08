@@ -1,7 +1,7 @@
 course := "capstone"
 assignment := "observatory"
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.11.0"
 
 scalacOptions ++= Seq(
   "-feature",
@@ -26,9 +26,15 @@ libraryDependencies ++= Seq(
   "com.novocode" % "junit-interface" % "0.11" % Test
 )
 
+libraryDependencies += "com.github.seratch" %% "awscala" % "0.8.+"
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.1.0"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.0" % "test"
 
 testOptions in Test += Tests.Argument(TestFrameworks.JUnit, "-a", "-v", "-s")
 
 parallelExecution in Test := false // So that tests are executed for each milestone, one after the other
+
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
+}

@@ -4,7 +4,7 @@
 		module="capstone-observatory$sbt_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20191223211934"
+		publication="20200106204153"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -51,10 +51,31 @@
 		<dependency org="org.scala-js" name="scalajs-sbt-test-adapter_2.12" rev="0.6.28" conf="compile->default(compile)" info.apiURL="http://www.scala-js.org/api/scalajs-sbt-test-adapter/0.6.28/"/>
 		<dependency org="org.scala-sbt" name="test-interface" rev="1.0" conf="compile->default(compile)"/>
 		<dependency org="org.portable-scala" name="sbt-platform-deps" rev="1.0.0" conf="compile->default(compile)" scalaVersion="2.12" sbtVersion="1.0"/>
+		<dependency org="com.eed3si9n" name="sbt-assembly" rev="0.14.10" conf="compile->default(compile)" scalaVersion="2.12" sbtVersion="1.0"/>
+		<dependency org="org.scalactic" name="scalactic_2.12" rev="3.0.8" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.12.7" conf="compile->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.12.7/"/>
+		<dependency org="org.pantsbuild" name="jarjar" rev="1.7.2" conf="compile->default(compile)"/>
+		<dependency org="org.apache.ant" name="ant" rev="1.9.9" conf="compile->default(compile)"/>
+		<dependency org="org.apache.ant" name="ant-launcher" rev="1.9.9" conf="compile->default(compile)"/>
+		<dependency org="org.ow2.asm" name="asm" rev="7.0" conf="compile->default(compile)"/>
+		<dependency org="org.ow2.asm" name="asm-commons" rev="7.0" conf="compile->default(compile)"/>
+		<dependency org="org.ow2.asm" name="asm-tree" rev="7.0" conf="compile->default(compile)"/>
+		<dependency org="org.ow2.asm" name="asm-analysis" rev="7.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.maven" name="maven-plugin-api" rev="3.3.9" conf="compile->default(compile)"/>
+		<dependency org="org.apache.maven" name="maven-model" rev="3.3.9" conf="compile->default(compile)"/>
+		<dependency org="org.codehaus.plexus" name="plexus-utils" rev="3.0.22" conf="compile->default(compile)"/>
+		<dependency org="org.apache.commons" name="commons-lang3" rev="3.4" conf="compile->default(compile)"/>
+		<dependency org="org.apache.maven" name="maven-artifact" rev="3.3.9" conf="compile->default(compile)"/>
+		<dependency org="org.eclipse.sisu" name="org.eclipse.sisu.plexus" rev="0.3.2" conf="compile->default(compile)"/>
+		<dependency org="javax.enterprise" name="cdi-api" rev="1.0" conf="compile->default(compile)"/>
+		<dependency org="javax.annotation" name="jsr250-api" rev="1.0" conf="compile->default(compile)"/>
+		<dependency org="javax.inject" name="javax.inject" rev="1" conf="compile->default(compile)"/>
+		<dependency org="org.eclipse.sisu" name="org.eclipse.sisu.inject" rev="0.3.2" conf="compile->default(compile)"/>
+		<dependency org="org.codehaus.plexus" name="plexus-component-annotations" rev="1.5.5" conf="compile->default(compile)"/>
+		<dependency org="org.codehaus.plexus" name="plexus-classworlds" rev="2.5.2" conf="compile->default(compile)"/>
 		<dependency org="org.scalaj" name="scalaj-http_2.12" rev="2.3.0" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-json_2.12" rev="2.6.9" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-functional_2.12" rev="2.6.9" conf="compile->default(compile)"/>
-		<dependency org="org.scala-lang" name="scala-reflect" rev="2.12.7" conf="compile->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.12.7/"/>
 		<dependency org="org.typelevel" name="macro-compat_2.12" rev="1.1.1" conf="compile->default(compile)"/>
 		<dependency org="joda-time" name="joda-time" rev="2.9.9" conf="compile->default(compile)"/>
 		<dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.8.9" conf="compile->default(compile)"/>

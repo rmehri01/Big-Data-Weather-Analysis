@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e84ba5e-069e-4f53-a861-e6ef01254ab8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/observatory/.idea/modules/capstone-observatory-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/.idea/modules/capstone-observatory-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/.idea/modules/capstone-observatory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/.idea/modules/capstone-observatory.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/.idea/modules/capstoneUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/.idea/modules/capstoneUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/capstoneui/capstoneui$sources/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/capstoneui/capstoneui$sources/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/capstoneui/capstoneui$sources/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/capstoneui/capstoneui$sources/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/capstoneui/capstoneui_sjs0.6_2.13/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/capstoneui/capstoneui_sjs0.6_2.13/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/capstoneui/capstoneui_sjs0.6_2.13/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/capstoneui/capstoneui_sjs0.6_2.13/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-phantom-js-jetty.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-phantom-js-jetty.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-phantom-js-jetty.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui_sjs0.6_2.13-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.13/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.13/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/update/$global/streams/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/update/$global/streams/update_cache_2.13/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/capstone-ui/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/project/target/config-classes/$0bd22907db9bf39b80a6.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/project/target/config-classes/$19e6776dd4c506580c12.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/project/target/config-classes/$249a7b5a507ec03d1b80.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/project/target/config-classes/$2759c964ad6fb9f4ebc4.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/project/target/config-classes/$498bece6fe016e4a108a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/project/target/config-classes/$4a091b7fe54d59d1d800.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$086ff5471758182991d2.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$0d5b3b6426fd4864be85.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$0e8e285f805ad29f58e7.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$26b80f56cf55c5513dba.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$3e5a482a211b69b32a64.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$5bb0baadb69ce8356e55.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$6d636a786635e1ed8849.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$8a25ac29ec8f1ebf8c93.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$8eac128ab1e010b05ab7.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$ae7573a78196fb40ee71.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$b49cecfad5a03762f14c.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$e3e95a65498b02611359.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$f2f281e272a3b9732663.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/config-classes/$f9cfccf1de8de82acec5.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/default/observatory-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/default/observatory-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/default/observatory-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/default/observatory-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-observatory-build-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/exportedProducts/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/compile/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/compile/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/runtime/dependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/runtime/exportedProducts/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/runtime/exportedProducts/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/runtime/fullClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/runtime/fullClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/project/target/streams/runtime/managedClasspath/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/project/target/streams/runtime/managedClasspath/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/main/scala/observatory/Extraction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/src/main/scala/observatory/Extraction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/main/scala/observatory/Interaction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/src/main/scala/observatory/Interaction.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/main/scala/observatory/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/src/main/scala/observatory/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/main/scala/observatory/Visualization.scala" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/src/main/scala/observatory/Visualization.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/test/scala/observatory/CapstoneSuite.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/test/scala/observatory/ExtractionTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/test/scala/observatory/Interaction2Test.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/test/scala/observatory/InteractionTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/test/scala/observatory/ManipulationTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/test/scala/observatory/Visualization2Test.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/src/test/scala/observatory/VisualizationTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sbt_2.12/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sbt_2.12/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sbt_2.12/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sbt_2.12/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sources/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sources/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sources/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sources/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sources_2.12/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sources_2.12/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sources_2.12/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory$sources_2.12/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory_2.12/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory_2.12/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory_2.12/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/capstone-observatory/capstone-observatory_2.12/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sbt_2.12-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources_2.12-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-compile-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-compile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-optional.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-provided.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-runtime-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-runtime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-scala-tool.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-test-internal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory_2.12-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/streams/$global/dependencyPositions/$global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/streams/$global/ivyConfiguration/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/streams/$global/ivyConfiguration/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/streams/$global/update/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/streams/$global/updateClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/streams/$global/updateClassifiers/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observatory/target/streams/$global/updateSbtClassifiers/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/observatory/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/streams/out" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1VwMgIEAwU3F7eD8Kn37b2zenR3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="big-data-weather-analysis" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="big-data-weather-analysis [file:/Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="big-data-weather-analysis-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="1578339517173" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="3724303870" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/barneshut" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/calculator" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/calculator 2" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/example" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/example 2" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/funsets" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/kmeans" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/objsets" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/play-samples-play-scala-hello-world-tutorial" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/quickcheck" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/reactive-maps" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/recfun" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/reductions" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/scalashop" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/stackoverflow" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/streams" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/timeusage" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/wikipedia" value="PREVIEW" />
+        <entry key="$USER_HOME$/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory" value="PREVIEW" />
+        <entry key="$USER_HOME$/Side Projects/IdeaProjects/EPFL Course/forcomp" value="PREVIEW" />
+        <entry key="$USER_HOME$/Side Projects/IdeaProjects/EPFL Course/patmat" value="PREVIEW" />
+        <entry key="$USER_HOME$/Side Projects/IdeaProjects/Housing Finder/UBC-Housing-Finder" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e84ba5e-069e-4f53-a861-e6ef01254ab8" name="Default Changelist" comment="" />
+      <created>1578159813388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578159813388</updated>
+      <workItem from="1578159816463" duration="1004000" />
+      <workItem from="1578171264152" duration="32000" />
+      <workItem from="1578339383098" duration="518000" />
+      <workItem from="1578339920308" duration="61000" />
+      <workItem from="1578371628513" duration="150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="447" y="379" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1578339483711">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="447" y="379" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.23.1440.877@0.23.1440.877" timestamp="1578339483711" />
+    <state x="563" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578339490858">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="563" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.877@0.23.1440.877" timestamp="1578339490858" />
+    <state x="468" y="319" key="NewModule_or_Project.wizard" timestamp="1578339935992">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="468" y="319" key="NewModule_or_Project.wizard/0.23.1440.877@0.23.1440.877" timestamp="1578339935992" />
+    <state x="380" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1578371631257">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="380" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1578371631257" />
+  </component>
+</project>

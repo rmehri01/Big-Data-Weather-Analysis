@@ -4,7 +4,7 @@
 		module="capstone-observatory$sources"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20191223211953"
+		publication="20200106204157"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

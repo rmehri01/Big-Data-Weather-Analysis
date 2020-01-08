@@ -1,6 +1,7 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
+import org.apache.spark.rdd.RDD
 
 /**
   * 2nd milestone: basic visualization
@@ -13,20 +14,6 @@ object Visualization extends VisualizationInterface {
     * @return The predicted temperature at `location`
     */
   def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
-    def distance(l1: Location, l2: Location) = {
-      import Math._
-
-      val RADIUS = 6371d // radius of earth in km
-      val (lat1, lon1) = (toRadians(l1.lat), toRadians(l1.lon))
-      val (lat2, lon2) = (toRadians(l2.lat), toRadians(l2.lon))
-
-      val centralAngle =
-        if (lat1 == lat2 && lon1 == lon2) 0
-        else if (-toDegrees(lat1) == toDegrees(lat2) && abs(toDegrees(lon1) - toDegrees(lon2)) == 180d) PI
-        else acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(abs(lon1 - lon2)))
-
-      RADIUS * centralAngle
-    }
 
     val withDistances = temperatures.map { case (loc, temp) => (distance(loc, location), temp) }.par
     lazy val filteredDistances = withDistances.filter(_._1 < 1)
@@ -34,7 +21,7 @@ object Visualization extends VisualizationInterface {
     def inverseDistance = {
       val inversePairs = for {
         (dist, temp) <- withDistances
-        inverseDistance = 1d / Math.pow(dist, 5)
+        inverseDistance = 1d / Math.pow(dist, 4)
       } yield (inverseDistance * temp, inverseDistance)
       val (numerator, denominator) = inversePairs.unzip
       numerator.sum / denominator.sum
@@ -44,26 +31,70 @@ object Visualization extends VisualizationInterface {
     else inverseDistance
   }
 
+  def sparkPredictTemperature(temperatures: RDD[(Location, Temperature)], location: Location): Temperature = {
+
+    val withDistances = temperatures.map { case (loc, temp) => (distance(loc, location), temp) }
+    //    val filteredDistances = withDistances.filter(_._1 < 1)
+
+    def inverseDistance = {
+      val sums = withDistances.map { case (dist, temp) =>
+        val inverseDistance = 1d / Math.pow(dist, 4)
+        (inverseDistance * temp, inverseDistance)
+      }.reduce((first, second) => (first._1 + second._1, first._2 + second._2))
+
+      sums._1 / sums._2
+    }
+
+    //    if (!filteredDistances.isEmpty) filteredDistances.first()._2
+    inverseDistance
+  }
+
+  def distance(l1: Location, l2: Location) = {
+    import Math._
+
+    val RADIUS = 6371d // radius of earth in km
+    val (lat1, lon1) = (toRadians(l1.lat), toRadians(l1.lon))
+    val (lat2, lon2) = (toRadians(l2.lat), toRadians(l2.lon))
+
+    val centralAngle =
+      if (lat1 == lat2 && lon1 == lon2) 0
+      else if (-toDegrees(lat1) == toDegrees(lat2) && abs(toDegrees(lon1) - toDegrees(lon2)) == 180d) PI
+      else acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(abs(lon1 - lon2)))
+
+    RADIUS * centralAngle
+  }
+
   /**
     * @param points Pairs containing a value and its associated color
     * @param value  The value to interpolate
     * @return The color that corresponds to `value`, according to the color scale defined by `points`
     */
-  def interpolateColor(points: Iterable[(Temperature, Color)], value: Temperature): Color = {
-    val maxTemp = points.maxBy(_._1)
-    val minTemp = points.minBy(_._1)
-    if (value >= maxTemp._1) maxTemp._2
-    else if (value <= minTemp._1) minTemp._2
-    else {
-      val differences = points.map { case (temp, color) => (temp - value, temp, color) }
-      val (negatives, positives) = differences.partition(_._1 < 0)
-      val (d1, t1, c1) = negatives.maxBy(_._1)
-      val (d2, t2, c2) = positives.minBy(_._1)
-      val scale = (value - t1) / (t2 - t1)
-      Color(((1 - scale) * c1.red + scale * c2.red).round.toInt,
-        ((1 - scale) * c1.green + scale * c2.green).round.toInt,
-        ((1 - scale) * c1.blue + scale * c2.blue).round.toInt)
+  def interpolateColor(points: Iterable[(Double, Color)], value: Double): Color = {
+    val sortedPoints = points.toList.sortWith(_._1 < _._1).toArray
+    interpolateColor(sortedPoints, value)
+  }
+
+  def interpolateColor(sortedPoints: Array[(Double, Color)], value: Double): Color = {
+
+    for (i <- 0 until sortedPoints.length - 1) {
+      (sortedPoints(i), sortedPoints(i + 1)) match {
+        case ((v1, Color(r1, g1, b1)), (v2, Color(r2, g2, b2))) => {
+          if (v1 > value) {
+            return Color(r1, g1, b1)
+          }
+          else if (v2 > value) {
+            val ratio = (value - v1) / (v2 - v1)
+            return Color(
+              math.round(r1 + (r2 - r1) * ratio).toInt,
+              math.round(g1 + (g2 - g1) * ratio).toInt,
+              math.round(b1 + (b2 - b1) * ratio).toInt
+            )
+          }
+        }
+      }
     }
+    // Value is not within the colormap.  Return maximum color
+    sortedPoints(sortedPoints.length - 1)._2
   }
 
   /**

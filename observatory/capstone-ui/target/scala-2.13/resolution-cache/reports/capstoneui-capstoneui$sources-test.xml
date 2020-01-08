@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20191223212002"/>
+		date="20200107202118"/>
 	<dependencies>
 		<module organisation="com.lihaoyi" name="scalatags_sjs0.6_2.13">
 			<revision name="0.7.0" status="release" pubdate="20190613144907" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lihaoyi/scalatags" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
