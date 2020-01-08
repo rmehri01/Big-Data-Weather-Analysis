@@ -1,6 +1,8 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
+import org.apache.spark.rdd.RDD
+import Visualization._
 
 /**
   * 3rd milestone: interactive visualization
@@ -26,12 +28,23 @@ object Interaction extends InteractionInterface {
     * @return A 256×256 image showing the contents of the given tile
     */
   def tile(temperatures: Iterable[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
-    import Visualization._
     val pixels = for {
       y <- (0 until 128).par
       x <- (0 until 128).par
       curLocation = tileLocation(Tile(tile.x * 128 + x, tile.y * 128 + y, tile.zoom + 7))
       predictedColor = interpolateColor(colors, predictTemperature(temperatures, curLocation))
+    } yield Pixel(predictedColor.red, predictedColor.green, predictedColor.blue, 127)
+
+    Image(128, 128, pixels.toArray).scale(2)
+  }
+
+  def sparkTile(temperatures: RDD[(Location, Temperature)], colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
+    temperatures.persist()
+    val pixels = for {
+      y <- 0 until 128
+      x <- 0 until 128
+      curLocation = tileLocation(Tile(tile.x * 128 + x, tile.y * 128 + y, tile.zoom + 7))
+      predictedColor = interpolateColor(colors, sparkPredictTemperature(temperatures, curLocation))
     } yield Pixel(predictedColor.red, predictedColor.green, predictedColor.blue, 127)
 
     Image(128, 128, pixels.toArray).scale(2)

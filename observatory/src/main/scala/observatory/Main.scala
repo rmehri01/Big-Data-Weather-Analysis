@@ -5,14 +5,20 @@ import Extraction._
 import Interaction._
 import org.apache.spark.rdd.RDD
 
+import awscala._, s3._
+
 object Main extends App {
+  // aws s3 setup
+  implicit val s3 = S3.at(Region.Tokyo)
+  val bucket: Bucket = s3.createBucket("weather-photos-rmehri01")
+
   // Reduces number of log files for the grader
   Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
 
   // Main for temperatures
   val yearlyData = for {
-    year <- 2015 to 2015
-    resultOfYearlyAvgRecords = sparkLocationYearlyAverageRecords(sparkLocateTemperatures(year, "/stations.csv", s"/$year.csv"))
+    year <- (1975 to 2015).par
+    resultOfYearlyAvgRecords = sparkLocationYearlyAverageRecords(sparkLocateTemperatures(year, "stations.csv", s"$year.csv"))
   } yield (year, resultOfYearlyAvgRecords)
 
   val tempColors = Seq(
@@ -26,14 +32,22 @@ object Main extends App {
     (-60d, Color(0, 0, 0))
   )
 
-    val generateImage = (year: Year, inputTile: Tile, data: RDD[(Location, Temperature)]) => {
-      val (x, y, zoom) = (inputTile.x, inputTile.y, inputTile.zoom)
-      val dir = new java.io.File(s"target/temperatures/$year/$zoom/")
-      val result = tile(data.collect(), tempColors, inputTile)
-      if (!dir.exists()) dir.mkdirs()
-      result.output(new java.io.File(s"target/temperatures/$year/$zoom/$x-$y.png"))
-      ()
-    }
+  val generateImage = (year: Year, inputTile: Tile, data: RDD[(Location, Temperature)]) => {
+    val (x, y, zoom) = (inputTile.x, inputTile.y, inputTile.zoom)
+    //      val dir = new java.io.File(s"s3a://weatherdata-analytics/$year-$zoom")
+    println(s"Tiling: $year-$zoom-$x-$y.png")
+    val result = sparkTile(data, tempColors, inputTile)
+    println(s"Done Tiling: $year-$zoom-$x-$y.png")
+    //      if (!dir.exists()) dir.mkdirs()
+    //      result.output(new java.io.File(s"s3a://weatherdata-analytics/$year-$zoom-$x-$y.png"))
+    println(s"Result.outputting: $year-$zoom-$x-$y.png")
+    val output = result.output(new java.io.File(s"$year-$zoom-$x-$y.png"))
+    println(s"Done Result: $year-$zoom-$x-$y.png")
+    println(s"Putting in bucket: $year-$zoom-$x-$y.png")
+    bucket.put(s"$year-$zoom-$x-$y.png", output)
+    println(s"Done putting in bucket: $year-$zoom-$x-$y.png")
+    ()
+  }
 
-    generateTiles(yearlyData, generateImage)
+  generateTiles(yearlyData.toIndexedSeq, generateImage)
 }
