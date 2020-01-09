@@ -1,16 +1,16 @@
-[0m[[0m[0minfo[0m] [0m[0mFast optimizing /Users/ryanmehri/Side Projects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/capstoneui-fastopt.js[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 91664 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 32739 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 139209 us[0m
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/capstoneui-fastopt.js[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 124990 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 35067 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 165161 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Batch mode: false[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 7831 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 1 methods.[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 2650 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 12410 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 64213 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 2815 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mRefiner: 67130 us[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 809 -- invalidated: 2[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 2017 -- invalidated: 1[0m
-[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 36868 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 21449 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 45 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 27297 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 51783 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 103982 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 3141 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 107215 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 807 -- invalidated: 2[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 1982 -- invalidated: 27[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 38463 us[0m
 [0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 46 -- invalidated: 2 -- trees read: 2[0m

@@ -41,7 +41,6 @@ object JSMain {
     Signal {
       layer.setUrl(urlSignal())
     }
-    map.addControl(L.control.zoom(ZoomOptions(position = "bottomright")))
     document.body.appendChild(mapElement.render)
     map.invalidateSize()
   }
