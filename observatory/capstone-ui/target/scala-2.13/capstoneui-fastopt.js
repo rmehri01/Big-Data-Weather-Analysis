@@ -2176,7 +2176,6 @@ $c_Lobservatory_JSMain$.prototype.setupMap__Lobservatory_Signal__Lobservatory_Si
     })
   })(this, layer, urlSignal));
   new $c_Lobservatory_Signal().init___F0(expr);
-  map.addControl($g.L.control.zoom(new $c_Lleaflet_ZoomOptions().init___T("topleft")));
   var jsx$2 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body;
   var this$6 = $m_Lobservatory_Implicits$();
   jsx$2.appendChild(new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$6, mapElement).e$1);
@@ -9831,90 +9830,6 @@ var $d_Lleaflet_MapOptions = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lleaflet_MapOptions.prototype.$classData = $d_Lleaflet_MapOptions;
-/** @constructor */
-function $c_Lleaflet_ZoomOptions() {
-  $c_O.call(this);
-  this.position$1 = null
-}
-$c_Lleaflet_ZoomOptions.prototype = new $h_O();
-$c_Lleaflet_ZoomOptions.prototype.constructor = $c_Lleaflet_ZoomOptions;
-/** @constructor */
-function $h_Lleaflet_ZoomOptions() {
-  /*<skip>*/
-}
-$h_Lleaflet_ZoomOptions.prototype = $c_Lleaflet_ZoomOptions.prototype;
-$c_Lleaflet_ZoomOptions.prototype.productPrefix__T = (function() {
-  return "ZoomOptions"
-});
-$c_Lleaflet_ZoomOptions.prototype.productArity__I = (function() {
-  return 1
-});
-$c_Lleaflet_ZoomOptions.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true
-  } else if ($is_Lleaflet_ZoomOptions(x$1)) {
-    var ZoomOptions$1 = $as_Lleaflet_ZoomOptions(x$1);
-    return (this.position$1 === ZoomOptions$1.position$1)
-  } else {
-    return false
-  }
-});
-$c_Lleaflet_ZoomOptions.prototype.productElement__I__O = (function(x$1) {
-  switch (x$1) {
-    case 0: {
-      return this.position$1;
-      break
-    }
-    default: {
-      return $m_sr_Statics$().ioobe__I__O(x$1)
-    }
-  }
-});
-$c_Lleaflet_ZoomOptions.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-});
-$c_Lleaflet_ZoomOptions.prototype.$$js$exported$prop$position__O = (function() {
-  return this.position$1
-});
-$c_Lleaflet_ZoomOptions.prototype.init___T = (function(position) {
-  this.position$1 = position;
-  return this
-});
-$c_Lleaflet_ZoomOptions.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false)
-});
-$c_Lleaflet_ZoomOptions.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
-Object.defineProperty($c_Lleaflet_ZoomOptions.prototype, "position", {
-  "get": (function() {
-    return this.$$js$exported$prop$position__O()
-  }),
-  "configurable": true
-});
-function $is_Lleaflet_ZoomOptions(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lleaflet_ZoomOptions)))
-}
-function $as_Lleaflet_ZoomOptions(obj) {
-  return (($is_Lleaflet_ZoomOptions(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "leaflet.ZoomOptions"))
-}
-function $isArrayOf_Lleaflet_ZoomOptions(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lleaflet_ZoomOptions)))
-}
-function $asArrayOf_Lleaflet_ZoomOptions(obj, depth) {
-  return (($isArrayOf_Lleaflet_ZoomOptions(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lleaflet.ZoomOptions;", depth))
-}
-var $d_Lleaflet_ZoomOptions = new $TypeData().initClass({
-  Lleaflet_ZoomOptions: 0
-}, false, "leaflet.ZoomOptions", {
-  Lleaflet_ZoomOptions: 1,
-  O: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lleaflet_ZoomOptions.prototype.$classData = $d_Lleaflet_ZoomOptions;
 /** @constructor */
 function $c_Lobservatory_Color() {
   $c_O.call(this);
