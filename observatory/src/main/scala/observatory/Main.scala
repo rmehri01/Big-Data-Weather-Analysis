@@ -19,7 +19,7 @@ object Main extends App {
     year <- 1975 to 1975
     resultOfYearlyAvgRecords = sparkLocationYearlyAverageRecords(sparkLocateTemperatures(year, "stations.csv", s"$year.csv"))
   } yield (year, resultOfYearlyAvgRecords.as[(Location, Temperature)].collect())
-
+  // TODO: handle caching and decide whether to use dfs in processing the rest, likely yes
 
   val tempColors = Seq(
     (60d, Color(255, 255, 255)),

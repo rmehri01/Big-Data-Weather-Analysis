@@ -1303,23 +1303,23 @@
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] com.lihaoyi#scalatags_sjs0.6_2.13;0.7.0!scalatags_sjs0.6_2.13.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.13.0!scala-library.jar(src)
-[debug] 	[NOT REQUIRED] com.lihaoyi#sourcecode_sjs0.6_2.13;0.1.7!sourcecode_sjs0.6_2.13.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-js#scalajs-dom_sjs0.6_2.13;0.9.7!scalajs-dom_sjs0.6_2.13.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-js#scalajs-library_2.13;0.6.28!scalajs-library_2.13.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-js#scalajs-test-interface_2.13;0.6.28!scalajs-test-interface_2.13.jar(src)
+[debug] 	[NOT REQUIRED] com.lihaoyi#sourcecode_sjs0.6_2.13;0.1.7!sourcecode_sjs0.6_2.13.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-library_2.13;0.6.28!scalajs-library_2.13.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.13.0!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-dom_sjs0.6_2.13;0.9.7!scalajs-dom_sjs0.6_2.13.jar(src)
+[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.13.0;0.6.28!scalajs-compiler_2.13.0.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.13.0!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.13.0!scala-reflect.jar(src)
-[debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.13.0;0.6.28!scalajs-compiler_2.13.0.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.16.v20140903!jetty-io.jar(src)
-[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar(src)
-[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar(src)
-[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar(src)
-[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar(src)
-[debug] :: resolution report :: resolve 88ms :: artifacts dl 8ms
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar(src)
+[debug] :: resolution report :: resolve 107ms :: artifacts dl 4ms
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT compile produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-compile.xml
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT runtime produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-runtime.xml
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT test produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-test.xml
@@ -1332,4 +1332,4 @@
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT pom produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-pom.xml
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT scala-tool produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-scala-tool.xml
 [debug] 	report for capstoneui#capstoneui$sources;0.1.0-SNAPSHOT phantom-js-jetty produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/capstone-ui/target/scala-2.13/resolution-cache/reports/capstoneui-capstoneui$sources-phantom-js-jetty.xml
-[debug] 	resolve done (88ms resolve - 8ms download)
+[debug] 	resolve done (107ms resolve - 4ms download)

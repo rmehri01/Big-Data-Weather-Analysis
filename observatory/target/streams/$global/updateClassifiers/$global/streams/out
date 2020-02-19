@@ -24513,103 +24513,56 @@
 [debug] == resolving dependencies capstone-observatory#capstone-observatory$sources;0.1.0-SNAPSHOT->jline#jline;2.14.6 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.5!metrics-graphite.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty-all;4.1.42.Final!netty-all.jar(src)
-[debug] 	[NOT REQUIRED] commons-collections#commons-collections;3.2.2!commons-collections.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-core;2.6.5!hadoop-mapreduce-client-core.jar(src)
+[debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-graphite;3.1.5!metrics-graphite.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-network-common_2.12;2.4.5!spark-network-common_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-emr_2.12;0.8.4!awscala-emr_2.12.jar(src)
+[debug] 	[NOT REQUIRED] commons-collections#commons-collections;3.2.2!commons-collections.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.module#jackson-module-scala_2.12;2.6.7.1!jackson-module-scala_2.12.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-lang/scala-library/2.12.10/srcs/scala-library-sources.jar
-[debug] 	[NOT REQUIRED] com.drewnoakes#metadata-extractor;2.8.1!metadata-extractor.jar(src)
 [debug] 	[NOT REQUIRED] net.razorvine#pyrolite;4.13!pyrolite.jar(src)
 [debug] 	[NOT REQUIRED] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.10!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] com.twelvemonkeys.common#common-lang;3.2.1!common-lang.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-core_2.12/2.4.5/srcs/spark-core_2.12-sources.jar
-[debug] 	[NOT REQUIRED] org.glassfish.jersey.media#jersey-media-jaxb;2.22.2!jersey-media-jaxb.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.12/2.4.5/spark-core_2.12-2.4.5-sources.jar
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-emr_2.12/0.8.4/srcs/awscala-emr_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-emr_2.12/0.8.4/awscala-emr_2.12-0.8.4-sources.jar
-[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-core_2.12;2.4.5!spark-core_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.drewnoakes#metadata-extractor;2.8.1!metadata-extractor.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.directory.server#apacheds-i18n;2.0.0-M15!apacheds-i18n.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-network-common_2.12/2.4.5/srcs/spark-network-common_2.12-sources.jar
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-iam_2.12/0.8.4/srcs/awscala-iam_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.12/2.4.5/spark-network-common_2.12-2.4.5-sources.jar
+[debug] 	[NOT REQUIRED] org.glassfish.jersey.media#jersey-media-jaxb;2.22.2!jersey-media-jaxb.jar(src)
+[debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar(src)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-iam_2.12;0.8.4!awscala-iam_2.12.jar(src)
 [debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.1.3!commons-logging.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-iam_2.12/0.8.4/awscala-iam_2.12-0.8.4-sources.jar
 [debug] 	[NOT REQUIRED] org.json4s#json4s-ast_2.12;3.5.3!json4s-ast_2.12.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-redshift_2.12/0.8.4/srcs/awscala-redshift_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-redshift_2.12/0.8.4/awscala-redshift_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.12/2.4.5/spark-core_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.12/2.4.5/spark-core_2.12-2.4.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-emr_2.12/0.8.4/awscala-emr_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-emr_2.12/0.8.4/awscala-emr_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-iam_2.12/0.8.4/awscala-iam_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-iam_2.12/0.8.4/awscala-iam_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.12/2.4.5/spark-network-common_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.12/2.4.5/spark-network-common_2.12-2.4.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-redshift_2.12/0.8.4/awscala-redshift_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-redshift_2.12/0.8.4/awscala-redshift_2.12-0.8.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-emr_2.12/0.8.4/awscala-emr_2.12-0.8.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.10/scala-library-2.12.10-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-library;2.12.10!scala-library.jar(src) (491ms)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-redshift_2.12;0.8.4!awscala-redshift_2.12.jar(src)
 [debug] 	[NOT REQUIRED] oro#oro;2.0.8!oro.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-sqs/1.11.693/srcs/aws-java-sdk-sqs-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.11.693/aws-java-sdk-sqs-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.12/2.4.5/spark-core_2.12-2.4.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.12/2.4.5/spark-core_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-core_2.12;2.4.5!spark-core_2.12.jar(src) (564ms)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-sqs;1.11.693!aws-java-sdk-sqs.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.avro#avro;1.8.2!avro.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.jersey.containers#jersey-container-servlet;2.22.2!jersey-container-servlet.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.orc#orc-mapreduce;1.5.5!orc-mapreduce.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.jersey.containers#jersey-container-servlet;2.22.2!jersey-container-servlet.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.orc#orc-shims;1.5.5!orc-shims.jar(src)
 [debug] 	[NOT REQUIRED] org.codehaus.janino#commons-compiler;3.0.9!commons-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-auth;2.6.5!hadoop-auth.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.parquet#parquet-encoding;1.10.1!parquet-encoding.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.directory.api#api-asn1-api;1.0.0-M20!api-asn1-api.jar(src)
+[debug] 	[NOT REQUIRED] org.codehaus.janino#janino;3.0.9!janino.jar(src)
 [debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-jaxrs;1.9.13!jackson-jaxrs.jar(src)
 [debug] 	[NOT REQUIRED] net.sf.py4j#py4j;0.10.7!py4j.jar(src)
-[debug] 	[NOT REQUIRED] org.codehaus.janino#janino;3.0.9!janino.jar(src)
 [debug] 	[NOT REQUIRED] commons-beanutils#commons-beanutils;1.7.0!commons-beanutils.jar(src)
 [debug] 	[NOT REQUIRED] org.tukaani#xz;1.5!xz.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.avro#avro-ipc;1.8.2!avro-ipc.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-launcher_2.12/2.4.5/srcs/spark-launcher_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.12/2.4.5/spark-launcher_2.12-2.4.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.12/2.4.5/spark-launcher_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.12/2.4.5/spark-launcher_2.12-2.4.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.12/2.4.5/spark-launcher_2.12-2.4.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.12/2.4.5/spark-launcher_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-launcher_2.12;2.4.5!spark-launcher_2.12.jar(src) (63ms)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-launcher_2.12;2.4.5!spark-launcher_2.12.jar(src)
 [debug] 	[NOT REQUIRED] commons-lang#commons-lang;2.6!commons-lang.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.avro#avro-ipc;1.8.2!avro-ipc.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-hdfs;2.6.5!hadoop-hdfs.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.curator#curator-framework;2.6.0!curator-framework.jar(src)
 [debug] 	[NOT REQUIRED] org.objenesis#objenesis;2.5.1!objenesis.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-core/1.11.693/srcs/aws-java-sdk-core-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.693/aws-java-sdk-core-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-redshift_2.12/0.8.4/awscala-redshift_2.12-0.8.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-emr_2.12/0.8.4/awscala-emr_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-emr_2.12;0.8.4!awscala-emr_2.12.jar(src) (663ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-ec2/1.11.693/srcs/aws-java-sdk-ec2-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.11.693/aws-java-sdk-ec2-1.11.693-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-redshift_2.12/0.8.4/awscala-redshift_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-redshift_2.12;0.8.4!awscala-redshift_2.12.jar(src) (684ms)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-core;1.11.693!aws-java-sdk-core.jar(src)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-ec2;1.11.693!aws-java-sdk-ec2.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-lang3;3.5!commons-lang3.jar(src)
 [debug] 	[NOT REQUIRED] org.fusesource.leveldbjni#leveldbjni-all;1.8!leveldbjni-all.jar(src)
 [debug] 	[NOT REQUIRED] com.esotericsoftware#kryo-shaded;4.0.2!kryo-shaded.jar(src)
 [debug] 	[NOT REQUIRED] org.javassist#javassist;3.18.1-GA!javassist.jar(src)
 [debug] 	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.5.0!protobuf-java.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala_2.12/0.8.4/srcs/awscala_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala_2.12/0.8.4/awscala_2.12-0.8.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-iam_2.12/0.8.4/awscala-iam_2.12-0.8.4-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.12/2.4.5/spark-network-common_2.12-2.4.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-iam_2.12/0.8.4/awscala-iam_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-iam_2.12;0.8.4!awscala-iam_2.12.jar(src) (720ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-sts_2.12/0.8.4/srcs/awscala-sts_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-sts_2.12/0.8.4/awscala-sts_2.12-0.8.4-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.12/2.4.5/spark-network-common_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-network-common_2.12;2.4.5!spark-network-common_2.12.jar(src) (727ms)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala_2.12;0.8.4!awscala_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-sts_2.12;0.8.4!awscala-sts_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-compress;1.8.1!commons-compress.jar(src)
 [debug] 	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.2!jsr305.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.arrow#arrow-format;0.10.0!arrow-format.jar(src)
@@ -24619,201 +24572,88 @@
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-jvm;3.1.5!metrics-jvm.jar(src)
 [debug] 	[NOT REQUIRED] org.joda#joda-convert;2.2.1!joda-convert.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.7.9!jackson-core.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-stepfunctions_2.12/0.8.4/srcs/awscala-stepfunctions_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-stepfunctions_2.12/0.8.4/awscala-stepfunctions_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.11.693/aws-java-sdk-sqs-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.11.693/aws-java-sdk-sqs-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala_2.12/0.8.4/awscala_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala_2.12/0.8.4/awscala_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-sts_2.12/0.8.4/awscala-sts_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-sts_2.12/0.8.4/awscala-sts_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-stepfunctions_2.12/0.8.4/awscala-stepfunctions_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-stepfunctions_2.12/0.8.4/awscala-stepfunctions_2.12-0.8.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.11.693/aws-java-sdk-sqs-1.11.693-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sqs/1.11.693/aws-java-sdk-sqs-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-sqs;1.11.693!aws-java-sdk-sqs.jar(src) (498ms)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-stepfunctions_2.12;0.8.4!awscala-stepfunctions_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.13!jackson-mapper-asl.jar(src)
 [debug] 	[NOT REQUIRED] xml-apis#xml-apis;1.3.04!xml-apis.jar(src)
 [debug] 	[NOT REQUIRED] com.twelvemonkeys.common#common-io;3.2.1!common-io.jar(src)
 [debug] 	[NOT REQUIRED] org.mortbay.jetty#jetty-util;6.1.26!jetty-util.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-sqs_2.12/0.8.4/srcs/awscala-sqs_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-sqs_2.12/0.8.4/awscala-sqs_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-sqs_2.12/0.8.4/awscala-sqs_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-sqs_2.12/0.8.4/awscala-sqs_2.12-0.8.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-sqs_2.12/0.8.4/awscala-sqs_2.12-0.8.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-sqs_2.12/0.8.4/awscala-sqs_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-sqs_2.12;0.8.4!awscala-sqs_2.12.jar(src) (53ms)
-[debug] 	[NOT REQUIRED] org.apache.curator#curator-client;2.6.0!curator-client.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.hk2#hk2-api;2.4.0-b34!hk2-api.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-lang/scala-reflect/2.12.10/srcs/scala-reflect-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala_2.12/0.8.4/awscala_2.12-0.8.4-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-sts_2.12/0.8.4/awscala-sts_2.12-0.8.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala_2.12/0.8.4/awscala_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala_2.12;0.8.4!awscala_2.12.jar(src) (453ms)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-sqs_2.12;0.8.4!awscala-sqs_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.curator#curator-client;2.6.0!curator-client.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.10!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] javax.ws.rs#javax.ws.rs-api;2.0.1!javax.ws.rs-api.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-app;2.6.5!hadoop-mapreduce-client-app.jar(src)
 [debug] 	[NOT REQUIRED] log4j#log4j;1.2.17!log4j.jar(src)
-[debug] 	[NOT REQUIRED] org.antlr#antlr4-runtime;4.7!antlr4-runtime.jar(src)
 [debug] 	[NOT REQUIRED] org.lz4#lz4-java;1.4.0!lz4-java.jar(src)
+[debug] 	[NOT REQUIRED] org.antlr#antlr4-runtime;4.7!antlr4-runtime.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.ivy#ivy;2.4.0!ivy.jar(src)
 [debug] 	[NOT REQUIRED] com.github.luben#zstd-jni;1.3.2-2!zstd-jni.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-kms/1.11.693/srcs/aws-java-sdk-kms-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.693/aws-java-sdk-kms-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-stepfunctions_2.12/0.8.4/awscala-stepfunctions_2.12-0.8.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-sts_2.12/0.8.4/awscala-sts_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-sts_2.12;0.8.4!awscala-sts_2.12.jar(src) (428ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-simpledb/1.11.693/srcs/aws-java-sdk-simpledb-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.11.693/aws-java-sdk-simpledb-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-stepfunctions_2.12/0.8.4/awscala-stepfunctions_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-stepfunctions_2.12;0.8.4!awscala-stepfunctions_2.12.jar(src) (434ms)
-[debug] 	[NOT REQUIRED] org.apache.arrow#arrow-memory;0.10.0!arrow-memory.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.6.5!hadoop-yarn-server-nodemanager.jar(src)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-simpledb;1.11.693!aws-java-sdk-simpledb.jar(src)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-kms;1.11.693!aws-java-sdk-kms.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#jcl-over-slf4j;1.7.16!jcl-over-slf4j.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.arrow#arrow-memory;0.10.0!arrow-memory.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;0.9.94!jline.jar(src)
 [debug] 	[NOT REQUIRED] junit#junit;3.8.1!junit.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.arrow#arrow-vector;0.10.0!arrow-vector.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-network-shuffle_2.12/2.4.5/srcs/spark-network-shuffle_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.12/2.4.5/spark-network-shuffle_2.12-2.4.5-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.10/scala-reflect-2.12.10-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.12.10!scala-reflect.jar(src) (122ms)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-stepfunctions/1.11.693/srcs/aws-java-sdk-stepfunctions-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-stepfunctions/1.11.693/aws-java-sdk-stepfunctions-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.693/aws-java-sdk-core-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.693/aws-java-sdk-core-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.11.693/aws-java-sdk-ec2-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.11.693/aws-java-sdk-ec2-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.693/aws-java-sdk-kms-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.693/aws-java-sdk-kms-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.12/2.4.5/spark-network-shuffle_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.12/2.4.5/spark-network-shuffle_2.12-2.4.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.693/aws-java-sdk-kms-1.11.693-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-stepfunctions/1.11.693/aws-java-sdk-stepfunctions-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-stepfunctions/1.11.693/aws-java-sdk-stepfunctions-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.693/aws-java-sdk-core-1.11.693-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-kms/1.11.693/aws-java-sdk-kms-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-kms;1.11.693!aws-java-sdk-kms.jar(src) (380ms)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-network-shuffle_2.12;2.4.5!spark-network-shuffle_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.arrow#arrow-vector;0.10.0!arrow-vector.jar(src)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-stepfunctions;1.11.693!aws-java-sdk-stepfunctions.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.xbean#xbean-asm6-shaded;4.8!xbean-asm6-shaded.jar(src)
 [debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.11!commons-codec.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.dataformat#jackson-dataformat-cbor;2.6.7!jackson-dataformat-cbor.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-server-nodemanager;2.6.5!hadoop-yarn-server-nodemanager.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-client;2.6.5!hadoop-client.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-core_2.12/0.8.4/srcs/awscala-core_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-core_2.12/0.8.4/awscala-core_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-core_2.12/0.8.4/awscala-core_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-core_2.12/0.8.4/awscala-core_2.12-0.8.4-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-core/1.11.693/aws-java-sdk-core-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-core;1.11.693!aws-java-sdk-core.jar(src) (994ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-sql_2.12/2.4.5/srcs/spark-sql_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.12/2.4.5/spark-sql_2.12-2.4.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-stepfunctions/1.11.693/aws-java-sdk-stepfunctions-1.11.693-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.12/2.4.5/spark-network-shuffle_2.12-2.4.5-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.11.693/aws-java-sdk-simpledb-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.11.693/aws-java-sdk-simpledb-1.11.693-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.12/2.4.5/spark-network-shuffle_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-network-shuffle_2.12;2.4.5!spark-network-shuffle_2.12.jar(src) (509ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-stepfunctions/1.11.693/aws-java-sdk-stepfunctions-1.11.693-sources.jar
-[debug] 	[NOT REQUIRED] commons-digester#commons-digester;1.8!commons-digester.jar(src)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-core_2.12;0.8.4!awscala-core_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-sql_2.12;2.4.5!spark-sql_2.12.jar(src)
 [debug] 	[NOT REQUIRED] commons-configuration#commons-configuration;1.6!commons-configuration.jar(src)
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-stepfunctions;1.11.693!aws-java-sdk-stepfunctions.jar(src) (506ms)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.6.5!hadoop-mapreduce-client-jobclient.jar(src)
+[debug] 	[NOT REQUIRED] commons-digester#commons-digester;1.8!commons-digester.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#jul-to-slf4j;1.7.16!jul-to-slf4j.jar(src)
 [debug] 	[NOT REQUIRED] com.twelvemonkeys.imageio#imageio-metadata;3.2.1!imageio-metadata.jar(src)
 [debug] 	[NOT REQUIRED] com.carrotsearch#hppc;0.7.2!hppc.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.9!httpclient.jar(src)
 [debug] 	[NOT REQUIRED] com.ning#compress-lzf;1.0.3!compress-lzf.jar(src)
-[debug] 	[NOT REQUIRED] org.roaringbitmap#shims;0.7.45!shims.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-annotations;2.6.7!jackson-annotations.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-dynamodb/1.11.693/srcs/aws-java-sdk-dynamodb-sources.jar
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-dynamodb;1.11.693!aws-java-sdk-dynamodb.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.jersey.core#jersey-server;2.22.2!jersey-server.jar(src)
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.11.693/aws-java-sdk-dynamodb-1.11.693-sources.jar
-[debug] 	[NOT REQUIRED] org.glassfish.jersey.bundles.repackaged#jersey-guava;2.22.2!jersey-guava.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.11!httpcore.jar(src)
-[debug] 	[NOT REQUIRED] org.glassfish.hk2.external#javax.inject;2.4.0-b34!javax.inject.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.jersey.bundles.repackaged#jersey-guava;2.22.2!jersey-guava.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.9!httpclient.jar(src)
+[debug] 	[NOT REQUIRED] org.roaringbitmap#shims;0.7.45!shims.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.hk2.external#aopalliance-repackaged;2.4.0-b34!aopalliance-repackaged.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.orc#orc-core;1.5.5!orc-core.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#chill-java;0.9.3!chill-java.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.orc#orc-core;1.5.5!orc-core.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.zookeeper#zookeeper;3.4.6!zookeeper.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-dynamodb_2.12/0.8.4/srcs/awscala-dynamodb_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-dynamodb_2.12/0.8.4/awscala-dynamodb_2.12-0.8.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.11.693/aws-java-sdk-simpledb-1.11.693-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-simpledb/1.11.693/aws-java-sdk-simpledb-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-simpledb;1.11.693!aws-java-sdk-simpledb.jar(src) (562ms)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-annotations;2.6.7!jackson-annotations.jar(src)
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-core;3.1.5!metrics-core.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.curator#curator-recipes;2.6.0!curator-recipes.jar(src)
 [debug] 	[NOT REQUIRED] org.sonatype.sisu.inject#cglib;2.2.1-v20090111!cglib.jar(src)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-dynamodb_2.12;0.8.4!awscala-dynamodb_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.vlkan#flatbuffers;1.2.0-3f79e055!flatbuffers.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-crypto;1.0.0!commons-crypto.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-common;2.6.5!hadoop-common.jar(src)
-[debug] 	[NOT REQUIRED] javax.annotation#javax.annotation-api;1.2!javax.annotation-api.jar(src)
 [debug] 	[NOT REQUIRED] com.google.inject#guice;3.0!guice.jar(src)
+[debug] 	[NOT REQUIRED] javax.annotation#javax.annotation-api;1.2!javax.annotation-api.jar(src)
+[debug] 	[NOT REQUIRED] org.glassfish.hk2.external#javax.inject;2.4.0-b34!javax.inject.jar(src)
 [debug] 	[NOT REQUIRED] com.twelvemonkeys.imageio#imageio-jpeg;3.2.1!imageio-jpeg.jar(src)
 [debug] 	[NOT REQUIRED] javax.xml.stream#stax-api;1.0-2!stax-api.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.jersey.containers#jersey-container-servlet-core;2.22.2!jersey-container-servlet-core.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-emr/1.11.693/srcs/aws-java-sdk-emr-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-emr/1.11.693/aws-java-sdk-emr-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-core_2.12/0.8.4/awscala-core_2.12-0.8.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-core_2.12/0.8.4/awscala-core_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-core_2.12;0.8.4!awscala-core_2.12.jar(src) (321ms)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-emr;1.11.693!aws-java-sdk-emr.jar(src)
 [debug] 	[NOT REQUIRED] com.sksamuel.scrimage#scrimage-core_2.12;2.1.8!scrimage-core_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.hk2#hk2-utils;2.4.0-b34!hk2-utils.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-unsafe_2.12/2.4.5/srcs/spark-unsafe_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.12/2.4.5/spark-unsafe_2.12-2.4.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.11.693/aws-java-sdk-ec2-1.11.693-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.12/2.4.5/spark-sql_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.12/2.4.5/spark-sql_2.12-2.4.5-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-ec2/1.11.693/aws-java-sdk-ec2-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-ec2;1.11.693!aws-java-sdk-ec2.jar(src) (1285ms)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-unsafe_2.12;2.4.5!spark-unsafe_2.12.jar(src)
 [debug] 	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar(src)
 [debug] 	[NOT REQUIRED] org.xerial.snappy#snappy-java;1.1.7.3!snappy-java.jar(src)
 [debug] 	[NOT REQUIRED] io.netty#netty;3.9.9.Final!netty.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.parquet#parquet-jackson;1.10.1!parquet-jackson.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.parquet#parquet-format;2.4.0!parquet-format.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0!scala-parser-combinators_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-tags_2.12;2.4.5!spark-tags_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15!apacheds-kerberos-codec.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-tags_2.12/2.4.5/srcs/spark-tags_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.12/2.4.5/spark-tags_2.12-2.4.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.12/2.4.5/spark-tags_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.12/2.4.5/spark-tags_2.12-2.4.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.12/2.4.5/spark-sql_2.12-2.4.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.12/2.4.5/spark-sql_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-sql_2.12;2.4.5!spark-sql_2.12.jar(src) (415ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-sketch_2.12/2.4.5/srcs/spark-sketch_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.12/2.4.5/spark-sketch_2.12-2.4.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.12/2.4.5/spark-sketch_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.12/2.4.5/spark-sketch_2.12-2.4.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.12/2.4.5/spark-sketch_2.12-2.4.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.12/2.4.5/spark-sketch_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-sketch_2.12;2.4.5!spark-sketch_2.12.jar(src) (48ms)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-sketch_2.12;2.4.5!spark-sketch_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.univocity#univocity-parsers;2.7.3!univocity-parsers.jar(src)
 [debug] 	[NOT REQUIRED] javax.servlet#javax.servlet-api;3.1.0!javax.servlet-api.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-catalyst_2.12/2.4.5/srcs/spark-catalyst_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.12/2.4.5/spark-catalyst_2.12-2.4.5-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.12/2.4.5/spark-tags_2.12-2.4.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.12/2.4.5/spark-tags_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-tags_2.12;2.4.5!spark-tags_2.12.jar(src) (245ms)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-catalyst_2.12;2.4.5!spark-catalyst_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.json4s#json4s-jackson_2.12;3.5.3!json4s-jackson_2.12.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/jmespath-java/1.11.693/srcs/jmespath-java-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/jmespath-java/1.11.693/jmespath-java-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-dynamodb_2.12/0.8.4/awscala-dynamodb_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-dynamodb_2.12/0.8.4/awscala-dynamodb_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.12/2.4.5/spark-unsafe_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.12/2.4.5/spark-unsafe_2.12-2.4.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.11.693/aws-java-sdk-dynamodb-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.11.693/aws-java-sdk-dynamodb-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-emr/1.11.693/aws-java-sdk-emr-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-emr/1.11.693/aws-java-sdk-emr-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.12/2.4.5/spark-unsafe_2.12-2.4.5-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-dynamodb_2.12/0.8.4/awscala-dynamodb_2.12-0.8.4-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/jmespath-java/1.11.693/jmespath-java-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/jmespath-java/1.11.693/jmespath-java-1.11.693-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-dynamodb_2.12/0.8.4/awscala-dynamodb_2.12-0.8.4-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.12/2.4.5/spark-unsafe_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-dynamodb_2.12;0.8.4!awscala-dynamodb_2.12.jar(src) (975ms)
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-unsafe_2.12;2.4.5!spark-unsafe_2.12.jar(src) (809ms)
+[debug] 	[NOT REQUIRED] com.amazonaws#jmespath-java;1.11.693!jmespath-java.jar(src)
 [debug] 	[NOT REQUIRED] org.codehaus.jettison#jettison;1.1!jettison.jar(src)
 [debug] 	[NOT REQUIRED] org.json4s#json4s-scalap_2.12;3.5.3!json4s-scalap_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.google.code.gson#gson;2.2.4!gson.jar(src)
@@ -24821,26 +24661,16 @@
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-common;2.6.5!hadoop-yarn-common.jar(src)
 [debug] 	[NOT REQUIRED] javax.validation#validation-api;1.1.0.Final!validation-api.jar(src)
 [debug] 	[NOT REQUIRED] org.codehaus.jackson#jackson-xc;1.9.13!jackson-xc.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-lang.modules/scala-collection-compat_2.12/2.1.1/srcs/scala-collection-compat_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.1.1/scala-collection-compat_2.12-2.1.1-sources.jar
-[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-api;2.6.5!hadoop-yarn-api.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-collection-compat_2.12;2.1.1!scala-collection-compat_2.12.jar(src)
 [debug] 	[NOT REQUIRED] commons-httpclient#commons-httpclient;3.1!commons-httpclient.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.jersey.core#jersey-client;2.22.2!jersey-client.jar(src)
 [debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-annotations;2.6.5!hadoop-annotations.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-sts/1.11.693/srcs/aws-java-sdk-sts-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sts/1.11.693/aws-java-sdk-sts-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.1.1/scala-collection-compat_2.12-2.1.1-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.1.1/scala-collection-compat_2.12-2.1.1-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-emr/1.11.693/aws-java-sdk-emr-1.11.693-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/jmespath-java/1.11.693/jmespath-java-1.11.693-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.12/2.4.5/spark-catalyst_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.12/2.4.5/spark-catalyst_2.12-2.4.5-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/jmespath-java/1.11.693/jmespath-java-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#jmespath-java;1.11.693!jmespath-java.jar(src) (635ms)
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-server-common;2.6.5!hadoop-yarn-server-common.jar(src)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-sts;1.11.693!aws-java-sdk-sts.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.avro#avro-mapred;1.8.2!avro-mapred.jar(src)
 [debug] 	[NOT REQUIRED] commons-cli#commons-cli;1.2!commons-cli.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-yarn-api;2.6.5!hadoop-yarn-api.jar(src)
 [debug] 	[NOT REQUIRED] aopalliance#aopalliance;1.0!aopalliance.jar(src)
 [debug] 	[NOT REQUIRED] io.airlift#aircompressor;0.10!aircompressor.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.hk2#osgi-resource-locator;1.0.1!osgi-resource-locator.jar(src)
@@ -24852,107 +24682,37 @@
 [debug] 	[NOT REQUIRED] org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.6.5!hadoop-mapreduce-client-shuffle.jar(src)
 [debug] 	[NOT REQUIRED] commons-net#commons-net;3.1!commons-net.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.parquet#parquet-common;1.10.1!parquet-common.jar(src)
-[debug] 	[NOT REQUIRED] com.adobe.xmp#xmpcore;5.1.2!xmpcore.jar(src)
 [debug] 	[NOT REQUIRED] org.json4s#json4s-core_2.12;3.5.3!json4s-core_2.12.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.apache.spark/spark-kvstore_2.12/2.4.5/srcs/spark-kvstore_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.12/2.4.5/spark-kvstore_2.12-2.4.5-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-emr/1.11.693/aws-java-sdk-emr-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-emr;1.11.693!aws-java-sdk-emr.jar(src) (1236ms)
+[debug] 	[NOT REQUIRED] com.adobe.xmp#xmpcore;5.1.2!xmpcore.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-kvstore_2.12;2.4.5!spark-kvstore_2.12.jar(src)
 [debug] 	[NOT REQUIRED] javax.activation#activation;1.1.1!activation.jar(src)
 [debug] 	[NOT REQUIRED] com.google.guava#guava;11.0.2!guava.jar(src)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-s3_2.12;0.8.4!awscala-s3_2.12.jar(src)
 [debug] 	[NOT REQUIRED] io.dropwizard.metrics#metrics-json;3.1.5!metrics-json.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-s3_2.12/0.8.4/srcs/awscala-s3_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-s3_2.12/0.8.4/awscala-s3_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-s3_2.12/0.8.4/awscala-s3_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-s3_2.12/0.8.4/awscala-s3_2.12-0.8.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.11.693/aws-java-sdk-dynamodb-1.11.693-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.1.1/scala-collection-compat_2.12-2.1.1-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sts/1.11.693/aws-java-sdk-sts-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sts/1.11.693/aws-java-sdk-sts-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-s3_2.12/0.8.4/awscala-s3_2.12-0.8.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.12/2.1.1/scala-collection-compat_2.12-2.1.1-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang.modules#scala-collection-compat_2.12;2.1.1!scala-collection-compat_2.12.jar(src) (441ms)
-[info] downloading https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.12/2.4.5/spark-kvstore_2.12-2.4.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.12/2.4.5/spark-kvstore_2.12-2.4.5-sources.jar
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-ec2_2.12/0.8.4/srcs/awscala-ec2_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-ec2_2.12/0.8.4/awscala-ec2_2.12-0.8.4-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-dynamodb/1.11.693/aws-java-sdk-dynamodb-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-dynamodb;1.11.693!aws-java-sdk-dynamodb.jar(src) (1429ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-iam/1.11.693/srcs/aws-java-sdk-iam-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-iam/1.11.693/aws-java-sdk-iam-1.11.693-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-s3_2.12/0.8.4/awscala-s3_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-s3_2.12;0.8.4!awscala-s3_2.12.jar(src) (222ms)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-ec2_2.12;0.8.4!awscala-ec2_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-iam;1.11.693!aws-java-sdk-iam.jar(src)
 [debug] 	[NOT REQUIRED] com.clearspring.analytics#stream;2.7.0!stream.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-s3/1.11.693/srcs/aws-java-sdk-s3-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.693/aws-java-sdk-s3-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.12/2.4.5/spark-catalyst_2.12-2.4.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.12/2.4.5/spark-catalyst_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-catalyst_2.12;2.4.5!spark-catalyst_2.12.jar(src) (1123ms)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-s3;1.11.693!aws-java-sdk-s3.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.parquet#parquet-hadoop;1.10.1!parquet-hadoop.jar(src)
 [debug] 	[NOT REQUIRED] com.esotericsoftware#minlog;1.3.0!minlog.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.6.7.3!jackson-databind.jar(src)
 [debug] 	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar(src)
 [debug] 	[NOT REQUIRED] software.amazon.ion#ion-java;1.0.2!ion-java.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.github.seratch/awscala-simpledb_2.12/0.8.4/srcs/awscala-simpledb_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/github/seratch/awscala-simpledb_2.12/0.8.4/awscala-simpledb_2.12-0.8.4-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-ec2_2.12/0.8.4/awscala-ec2_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-ec2_2.12/0.8.4/awscala-ec2_2.12-0.8.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sts/1.11.693/aws-java-sdk-sts-1.11.693-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.12/2.4.5/spark-kvstore_2.12-2.4.5-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-sts/1.11.693/aws-java-sdk-sts-1.11.693-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.12/2.4.5/spark-kvstore_2.12-2.4.5-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-sts;1.11.693!aws-java-sdk-sts.jar(src) (701ms)
-[info] 	[SUCCESSFUL ] org.apache.spark#spark-kvstore_2.12;2.4.5!spark-kvstore_2.12.jar(src) (531ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/com.amazonaws/aws-java-sdk-redshift/1.11.693/srcs/aws-java-sdk-redshift-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.11.693/aws-java-sdk-redshift-1.11.693-sources.jar
-[debug] 	[NOT REQUIRED] org.htrace#htrace-core;3.0.4!htrace-core.jar(src)
+[debug] 	[NOT REQUIRED] com.github.seratch#awscala-simpledb_2.12;0.8.4!awscala-simpledb_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.amazonaws#aws-java-sdk-redshift;1.11.693!aws-java-sdk-redshift.jar(src)
 [debug] 	[NOT REQUIRED] org.roaringbitmap#RoaringBitmap;0.7.45!RoaringBitmap.jar(src)
 [debug] 	[NOT REQUIRED] com.twitter#chill_2.12;0.9.3!chill_2.12.jar(src)
 [debug] 	[NOT REQUIRED] javax.xml.bind#jaxb-api;2.2.2!jaxb-api.jar(src)
 [debug] 	[NOT REQUIRED] org.glassfish.jersey.core#jersey-common;2.22.2!jersey-common.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-log4j12;1.7.16!slf4j-log4j12.jar(src)
+[debug] 	[NOT REQUIRED] org.htrace#htrace-core;3.0.4!htrace-core.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.parquet#parquet-column;1.10.1!parquet-column.jar(src)
-[debug] 	[NOT REQUIRED] com.twelvemonkeys.common#common-image;3.2.1!common-image.jar(src)
-[debug] 	[NOT REQUIRED] joda-time#joda-time;2.10.3!joda-time.jar(src)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.fusesource.jansi/jansi/1.12/srcs/jansi-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-simpledb_2.12/0.8.4/awscala-simpledb_2.12-0.8.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-simpledb_2.12/0.8.4/awscala-simpledb_2.12-0.8.4-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12-sources.jar
-[info] 	[SUCCESSFUL ] org.fusesource.jansi#jansi;1.12!jansi.jar(src) (61ms)
-[debug] 		tried /Users/ryanmehri/.ivy2/local/org.scala-lang/scala-compiler/2.12.10/srcs/scala-compiler-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.10/scala-compiler-2.12.10-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.693/aws-java-sdk-s3-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.693/aws-java-sdk-s3-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.10/scala-compiler-2.12.10-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.10/scala-compiler-2.12.10-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-ec2_2.12/0.8.4/awscala-ec2_2.12-0.8.4-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.693/aws-java-sdk-s3-1.11.693-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-ec2_2.12/0.8.4/awscala-ec2_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-ec2_2.12;0.8.4!awscala-ec2_2.12.jar(src) (459ms)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-s3/1.11.693/aws-java-sdk-s3-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-s3;1.11.693!aws-java-sdk-s3.jar(src) (417ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/github/seratch/awscala-simpledb_2.12/0.8.4/awscala-simpledb_2.12-0.8.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/github/seratch/awscala-simpledb_2.12/0.8.4/awscala-simpledb_2.12-0.8.4-sources.jar
-[info] 	[SUCCESSFUL ] com.github.seratch#awscala-simpledb_2.12;0.8.4!awscala-simpledb_2.12.jar(src) (434ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.10/scala-compiler-2.12.10-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.10/scala-compiler-2.12.10-sources.jar
-[info] 	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.12.10!scala-compiler.jar(src) (316ms)
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-iam/1.11.693/aws-java-sdk-iam-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-iam/1.11.693/aws-java-sdk-iam-1.11.693-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.11.693/aws-java-sdk-redshift-1.11.693-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.11.693/aws-java-sdk-redshift-1.11.693-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.11.693/aws-java-sdk-redshift-1.11.693-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-redshift/1.11.693/aws-java-sdk-redshift-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-redshift;1.11.693!aws-java-sdk-redshift.jar(src) (790ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-iam/1.11.693/aws-java-sdk-iam-1.11.693-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-iam/1.11.693/aws-java-sdk-iam-1.11.693-sources.jar
-[info] 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-iam;1.11.693!aws-java-sdk-iam.jar(src) (1509ms)
-[debug] :: resolution report :: resolve 5970ms :: artifacts dl 4636ms
+[debug] 	[NOT REQUIRED] joda-time#joda-time;2.10.3!joda-time.jar(src)
+[debug] 	[NOT REQUIRED] com.twelvemonkeys.common#common-image;3.2.1!common-image.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.10!scala-compiler.jar(src)
+[debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.12!jansi.jar(src)
+[debug] :: resolution report :: resolve 5675ms :: artifacts dl 31ms
 [debug] 	report for capstone-observatory#capstone-observatory$sources;0.1.0-SNAPSHOT compile produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-compile.xml
 [debug] 	report for capstone-observatory#capstone-observatory$sources;0.1.0-SNAPSHOT runtime produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-runtime.xml
 [debug] 	report for capstone-observatory#capstone-observatory$sources;0.1.0-SNAPSHOT test produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-test.xml
@@ -24964,4 +24724,4 @@
 [debug] 	report for capstone-observatory#capstone-observatory$sources;0.1.0-SNAPSHOT plugin produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-plugin.xml
 [debug] 	report for capstone-observatory#capstone-observatory$sources;0.1.0-SNAPSHOT pom produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-pom.xml
 [debug] 	report for capstone-observatory#capstone-observatory$sources;0.1.0-SNAPSHOT scala-tool produced in /Users/ryanmehri/SideProjects/IdeaProjects/BigDataCapstone/Big-Data-Weather-Analysis/observatory/target/scala-2.12/resolution-cache/reports/capstone-observatory-capstone-observatory$sources-scala-tool.xml
-[debug] 	resolve done (5970ms resolve - 4636ms download)
+[debug] 	resolve done (5675ms resolve - 31ms download)

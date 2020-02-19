@@ -24,12 +24,15 @@ object Extraction extends ExtractionInterface {
 
   def sparkLocateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): DataFrame = {
 
+    val emptyFillValue = -1
+
     val stationsDF = spark.read.format("csv")
       .option("inferSchema", "true")
       .load(s"src/main/resources/${stationsFile}")
       .coalesce(5)
       .toDF("STN", "WBAN", "lat", "lon")
       .na.drop(Seq("lat", "lon"))
+      .na.fill(emptyFillValue)
     stationsDF.cache()
 
     val temperaturesDF = spark.read.format("csv")
@@ -38,6 +41,7 @@ object Extraction extends ExtractionInterface {
       .coalesce(5)
       .toDF("STN", "WBAN", "month", "day", "temp")
       .na.drop(Seq("month", "day", "temp"))
+      .na.fill(emptyFillValue)
     temperaturesDF.cache()
 
     val joinExpression = temperaturesDF.col("STN") === stationsDF.col("STN") &&
@@ -58,7 +62,7 @@ object Extraction extends ExtractionInterface {
       .select(
         to_date(concat_ws("-", lit(year), $"month", $"day")) as "date",
         createLocationUdf($"lat", $"lon") as "location",
-        expr("round((temp - 32) * 5 / 9, 1)") as "temp"
+        expr("(temp - 32) * 5 / 9") as "temp"
       )
     println(s"successfully loaded in $year dataset")
     tripletDF
