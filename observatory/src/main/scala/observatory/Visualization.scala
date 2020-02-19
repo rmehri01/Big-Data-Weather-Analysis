@@ -1,7 +1,7 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
-import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.DataFrame
 
 /**
   * 2nd milestone: basic visualization
@@ -15,7 +15,7 @@ object Visualization extends VisualizationInterface {
     */
   def predictTemperature(temperatures: Iterable[(Location, Temperature)], location: Location): Temperature = {
 
-    val withDistances = temperatures.map { case (loc, temp) => (distance(loc, location), temp) }.par
+    val withDistances = temperatures.par.map { case (loc, temp) => (distance(loc, location), temp) }
     lazy val filteredDistances = withDistances.filter(_._1 < 1)
 
     def inverseDistance = {
@@ -31,25 +31,7 @@ object Visualization extends VisualizationInterface {
     else inverseDistance
   }
 
-  def sparkPredictTemperature(temperatures: RDD[(Location, Temperature)], location: Location): Temperature = {
-
-    val withDistances = temperatures.map { case (loc, temp) => (distance(loc, location), temp) }
-    //    val filteredDistances = withDistances.filter(_._1 < 1)
-
-    def inverseDistance = {
-      val sums = withDistances.map { case (dist, temp) =>
-        val inverseDistance = 1d / Math.pow(dist, 4)
-        (inverseDistance * temp, inverseDistance)
-      }.reduce((first, second) => (first._1 + second._1, first._2 + second._2))
-
-      sums._1 / sums._2
-    }
-
-    //    if (!filteredDistances.isEmpty) filteredDistances.first()._2
-    inverseDistance
-  }
-
-  def distance(l1: Location, l2: Location) = {
+  def distance(l1: Location, l2: Location): Temperature = {
     import Math._
 
     val RADIUS = 6371d // radius of earth in km
@@ -122,12 +104,6 @@ object Visualization extends VisualizationInterface {
     Image.apply(360, 180, pixels.toArray)
   }
 
-  //  def sparkVisualize(temperatures: RDD[(Location, Temperature)], colors: RDD[(Temperature, Color)]): Image = {
-  //    //    val reversedTemps = temperatures.map { case (location, temperature) => (temperature, location) }
-  //    //    val joined = reversedTemps.partitionBy(new RangePartitioner(4, reversedTemps))
-  //    //      .join(colors)
-  //
-  //  }
 
 }
 

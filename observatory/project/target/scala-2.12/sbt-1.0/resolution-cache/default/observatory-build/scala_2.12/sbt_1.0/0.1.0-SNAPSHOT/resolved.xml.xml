@@ -4,7 +4,7 @@
 		module="observatory-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20200109112726"
+		publication="20200218183954"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

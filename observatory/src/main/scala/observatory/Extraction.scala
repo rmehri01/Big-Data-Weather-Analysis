@@ -2,16 +2,15 @@ package observatory
 
 import java.time.LocalDate
 
+import SparkSessionSetup.spark
+import org.apache.spark.sql.DataFrame
+
 /**
   * 1st milestone: data extraction
   */
 object Extraction extends ExtractionInterface {
 
-  import org.apache.spark.rdd.RDD
-  import org.apache.spark.{SparkConf, SparkContext}
-
-  val conf: SparkConf = new SparkConf().setAppName("Weather Analysis").setMaster("local[4]")
-  val spark: SparkContext = new SparkContext(conf)
+  import spark.implicits._
 
   /**
     * @param year             Year number
@@ -20,36 +19,49 @@ object Extraction extends ExtractionInterface {
     * @return A sequence containing triplets (date, location, temperature)
     */
   def locateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): Iterable[(LocalDate, Location, Temperature)] = {
-    sparkLocateTemperatures(year, stationsFile, temperaturesFile).collect()
+    sparkLocateTemperatures(year, stationsFile, temperaturesFile).as[(LocalDate, Location, Temperature)].collect()
   }
 
-  def sparkLocateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): RDD[(LocalDate, Location, Temperature)] = {
+  def sparkLocateTemperatures(year: Year, stationsFile: String, temperaturesFile: String): DataFrame = {
 
-    val stationsRDD = spark.textFile(s"s3://weatherdataspark/$stationsFile")
-      .filter(line => line.split(",").length == 4) // only want to be missing one field
-      .map { line =>
-        val arr = line.split(",")
-        ((arr(0), arr(1)), (arr(2).toDouble, arr(3).toDouble))
-      }
+    val stationsDF = spark.read.format("csv")
+      .option("inferSchema", "true")
+      .load(s"src/main/resources/${stationsFile}")
+      .coalesce(5)
+      .toDF("STN", "WBAN", "lat", "lon")
+      .na.drop(Seq("lat", "lon"))
+    stationsDF.cache()
 
-    // spark.textFile(temperaturesFile) also works
+    val temperaturesDF = spark.read.format("csv")
+      .option("inferSchema", "true")
+      .load(s"src/main/resources/${temperaturesFile}")
+      .coalesce(5)
+      .toDF("STN", "WBAN", "month", "day", "temp")
+      .na.drop(Seq("month", "day", "temp"))
+    temperaturesDF.cache()
 
-    val temperaturesRDD = spark.textFile(s"s3://weatherdataspark/$temperaturesFile")
-      .filter(line => line.split(",").length == 5)
-      .map { line =>
-        val arr = line.split(",")
-        ((arr(0), arr(1)), (arr(2).toInt, arr(3).toInt, arr(4).toDouble))
-      }
+    val joinExpression = temperaturesDF.col("STN") === stationsDF.col("STN") &&
+      temperaturesDF.col("WBAN") === stationsDF.col("WBAN")
+    val joinedDF = temperaturesDF
+      .join(stationsDF, joinExpression)
+      .drop("STN", "WBAN")
 
-    def toCelsius(num: Double): Double = roundToTens((num - 32) * 5 / 9)
+    import org.apache.spark.sql.functions.{to_date, lit, expr, concat_ws, udf}
 
-    def roundToTens(num: Double): Double = (num * 10).round / 10d
+    def createLocation(lat: Double, lon: Double): Location = {
+      Location(lat, lon)
+    }
 
-    stationsRDD.join(temperaturesRDD)
-      .mapValues {
-        case ((lat, lon), (month, day, temp)) => (LocalDate.of(year, month, day), Location(lat, lon), toCelsius(temp))
-      }
-      .values
+    val createLocationUdf = udf(createLocation(_: Double, _: Double): Location)
+
+    val tripletDF = joinedDF
+      .select(
+        to_date(concat_ws("-", lit(year), $"month", $"day")) as "date",
+        createLocationUdf($"lat", $"lon") as "location",
+        expr("round((temp - 32) * 5 / 9, 1)") as "temp"
+      )
+    println(s"successfully loaded in $year dataset")
+    tripletDF
   }
 
   /**
@@ -57,14 +69,17 @@ object Extraction extends ExtractionInterface {
     * @return A sequence containing, for each location, the average temperature over the year.
     */
   def locationYearlyAverageRecords(records: Iterable[(LocalDate, Location, Temperature)]): Iterable[(Location, Temperature)] = {
-    sparkLocationYearlyAverageRecords(spark.parallelize(records.toSeq)).collect()
+    sparkLocationYearlyAverageRecords(records.toSeq.toDF("date", "location", "temp"))
+      .as[(Location, Temperature)]
+      .collect()
   }
 
-  def sparkLocationYearlyAverageRecords(records: RDD[(LocalDate, Location, Temperature)]): RDD[(Location, Temperature)] = {
-    records.map { case (date, location, temp) => ((location, date.getYear), (temp, 1)) }
-      .reduceByKey { case ((t1, i1), (t2, i2)) => (t1 + t2, i1 + i2) }
-      .mapValues { case (t, num) => t / num.toDouble }
-      .map { case ((location, _), avg) => (location, avg) }
+  def sparkLocationYearlyAverageRecords(records: DataFrame): DataFrame = {
+    import org.apache.spark.sql.functions.avg
+
+    val result = records.groupBy("location")
+      .agg(avg("temp"))
+    result
   }
 
 }

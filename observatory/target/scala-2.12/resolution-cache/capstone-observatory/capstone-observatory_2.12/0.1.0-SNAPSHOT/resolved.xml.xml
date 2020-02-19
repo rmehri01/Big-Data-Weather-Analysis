@@ -4,7 +4,7 @@
 		module="capstone-observatory_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20200105104821"
+		publication="20200218184116"
 	>
 		<description>
 		capstone-observatory
@@ -30,17 +30,10 @@
 		<artifact name="capstone-observatory_2.12" type="doc" ext="jar" conf="compile" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.8" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.12.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.10" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.10" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="com.sksamuel.scrimage" name="scrimage-core_2.12" rev="2.1.8" conf="compile->default(compile)"/>
-		<dependency org="org.apache.spark" name="spark-sql_2.12" rev="2.4.3" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.akka" name="akka-stream_2.12" rev="2.5.23" conf="compile->default(compile)"/>
-		<dependency org="com.typesafe.akka" name="akka-stream-testkit_2.12" rev="2.5.23" conf="test->default(compile)"/>
-		<dependency org="io.monix" name="monix_2.12" rev="2.3.3" conf="compile->default(compile)"/>
-		<dependency org="co.fs2" name="fs2-io_2.12" rev="1.0.5" conf="compile->default(compile)"/>
-		<dependency org="org.scalacheck" name="scalacheck_2.12" rev="1.13.5" conf="test->default(compile)"/>
-		<dependency org="com.novocode" name="junit-interface" rev="0.11" conf="test->default(compile)"/>
-		<dependency org="org.scalactic" name="scalactic_2.12" rev="3.1.0" conf="compile->default(compile)"/>
-		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.1.0" conf="test->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-sql_2.12" rev="2.4.5" conf="compile->default(compile)"/>
+		<dependency org="com.github.seratch" name="awscala_2.12" rev="0.8.+" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
