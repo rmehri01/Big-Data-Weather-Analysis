@@ -28,7 +28,7 @@ object Extraction extends ExtractionInterface {
 
     val stationsDF = spark.read.format("csv")
       .option("inferSchema", "true")
-      .load(s"src/main/resources/${stationsFile}")
+      .load(s"${stationsFile}")
       .coalesce(5)
       .toDF("STN", "WBAN", "lat", "lon")
       .na.drop(Seq("lat", "lon"))
@@ -37,7 +37,7 @@ object Extraction extends ExtractionInterface {
 
     val temperaturesDF = spark.read.format("csv")
       .option("inferSchema", "true")
-      .load(s"src/main/resources/${temperaturesFile}")
+      .load(s"${temperaturesFile}")
       .coalesce(5)
       .toDF("STN", "WBAN", "month", "day", "temp")
       .na.drop(Seq("month", "day", "temp"))
@@ -64,7 +64,7 @@ object Extraction extends ExtractionInterface {
         createLocationUdf($"lat", $"lon") as "location",
         expr("(temp - 32) * 5 / 9") as "temp"
       )
-    println(s"successfully loaded in $year dataset")
+
     tripletDF
   }
 

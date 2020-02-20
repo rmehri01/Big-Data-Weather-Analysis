@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: io.opencensus:opencensus-contrib-http-util:0.24.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.opencensus/opencensus-contrib-http-util/jars/opencensus-contrib-http-util-0.24.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.opencensus/opencensus-contrib-http-util/srcs/opencensus-contrib-http-util-0.24.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

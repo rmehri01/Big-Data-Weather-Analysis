@@ -13,10 +13,11 @@ scalacOptions ++= Seq(
 
 libraryDependencies ++= Seq(
   "com.sksamuel.scrimage" %% "scrimage-core" % "2.1.8", // for visualization
-  "org.apache.spark" %% "spark-sql" % "2.4.5",
-  "com.github.seratch" %% "awscala" % "0.8.+",
+  "org.apache.spark" %% "spark-sql" % "2.4.5" % "provided",
+  //  "com.github.seratch" %% "awscala" % "0.8.+",
 )
 
+libraryDependencies += "com.google.cloud" % "google-cloud-storage" % "1.103.1"
 //libraryDependencies += "org.scalactic" %% "scalactic" % "3.1.0"
 //libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.0" % "test"
 

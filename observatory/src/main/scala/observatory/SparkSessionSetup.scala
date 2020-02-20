@@ -14,6 +14,6 @@ object SparkSessionSetup {
     .config("spark.some.config.option", "some-value")
     .getOrCreate()
 
-  spark.conf.set("spark.sql.shuffle.partitions", "4")
+  spark.conf.set("spark.sql.shuffle.partitions", "8")
 
 }

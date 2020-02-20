@@ -1,9 +1,8 @@
 package observatory
 
 import com.sksamuel.scrimage.{Image, Pixel}
-import org.apache.spark.rdd.RDD
 import Visualization._
-import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.{DataFrame, Dataset}
 
 /**
   * 3rd milestone: interactive visualization
@@ -40,6 +39,18 @@ object Interaction extends InteractionInterface {
     Image(128, 128, pixels.toArray).scale(2)
   }
 
+  def sparkTile(temperatures: DataFrame, colors: Iterable[(Temperature, Color)], tile: Tile): Image = {
+    temperatures.cache()
+    val pixels = for {
+      y <- (0 until 128).par
+      x <- (0 until 128).par
+      curLocation = tileLocation(Tile(tile.x * 128 + x, tile.y * 128 + y, tile.zoom + 7))
+      predictedColor = interpolateColor(colors, sparkPredictTemperature(temperatures, curLocation).collect().head.getAs[Double]("(sumTemp / sumDist)"))
+    } yield Pixel(predictedColor.red, predictedColor.green, predictedColor.blue, 127)
+
+    Image(128, 128, pixels.toArray).scale(2)
+  }
+
   /**
     * Generates all the tiles for zoom levels 0 to 3 (included), for all the given years.
     *
@@ -49,13 +60,14 @@ object Interaction extends InteractionInterface {
     *                      y coordinates of the tile and the data to build the image from
     */
   def generateTiles[Data](
-                           yearlyData: Iterable[(Year, Data)],
+                           yearlyData: Dataset[(Year, Data)],
                            generateImage: (Year, Tile, Data) => Unit
                          ): Unit = {
     @scala.annotation.tailrec
     def loop(currentZoom: Int): Unit = {
       for (y <- 0 until Math.pow(2, currentZoom).toInt; x <- 0 until Math.pow(2, currentZoom).toInt)
-        yearlyData.par.foreach { case (year, data) => generateImage(year, Tile(x, y, currentZoom), data) }
+      //        yearlyData.foreach { case (year, data) => generateImage(year, Tile(x, y, currentZoom), data) }
+        yearlyData.rdd.foreach(pair => generateImage(pair._1, Tile(x, y, currentZoom), pair._2))
       currentZoom match {
         case 3 =>
         case _ => loop(currentZoom + 1)
@@ -65,4 +77,5 @@ object Interaction extends InteractionInterface {
     loop(0)
   }
 
+  override def generateTiles[Data](yearlyData: Iterable[(Year, Data)], generateImage: (Year, Tile, Data) => Unit): Unit = ???
 }

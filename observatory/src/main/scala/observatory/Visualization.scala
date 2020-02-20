@@ -31,6 +31,37 @@ object Visualization extends VisualizationInterface {
     else inverseDistance
   }
 
+  def sparkPredictTemperature(temperatures: DataFrame, location: Location): DataFrame = {
+
+    //    val withDistances = temperatures.par.map { case (loc, temp) => (distance(loc, location), temp) }
+    //    lazy val filteredDistances = withDistances.filter(_._1 < 1)
+    import org.apache.spark.sql.functions.sum
+    import SparkSessionSetup.spark.implicits._
+    val withDistances = temperatures.as[(Location, Temperature)]
+      .map { case (loc, temp) => (temp, distance(loc, location)) }
+    withDistances.cache()
+    val filteredDistances = withDistances.where("_2 < 1")
+        .select("_1")
+    filteredDistances.cache()
+
+    //    def inverseDistance = {
+    //      val inversePairs = for {
+    //        (dist, temp) <- withDistances
+    //        inverseDistance = 1d / Math.pow(dist, 4)
+    //      } yield (inverseDistance * temp, inverseDistance)
+    //      val (numerator, denominator) = inversePairs.unzip
+    //      numerator.sum / denominator.sum
+    //    }
+
+    val inversePair = withDistances.map { case (temp, dist) =>
+      val inverseDistance = 1d / Math.pow(dist, 4)
+      (inverseDistance * temp, inverseDistance)
+    }.select(sum($"_1") as "sumTemp", sum($"_2") as "sumDist")
+
+    if (filteredDistances.count() > 0) filteredDistances
+    else inversePair.selectExpr("sumTemp / sumDist")
+  }
+
   def distance(l1: Location, l2: Location): Temperature = {
     import Math._
 

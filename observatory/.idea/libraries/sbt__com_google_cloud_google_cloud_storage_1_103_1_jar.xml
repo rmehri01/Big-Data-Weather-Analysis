@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.google.cloud:google-cloud-storage:1.103.1:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.google.cloud/google-cloud-storage/jars/google-cloud-storage-1.103.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.google.cloud/google-cloud-storage/srcs/google-cloud-storage-1.103.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

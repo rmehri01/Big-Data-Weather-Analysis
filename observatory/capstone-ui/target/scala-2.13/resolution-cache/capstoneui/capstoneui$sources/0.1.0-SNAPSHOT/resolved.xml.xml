@@ -4,7 +4,7 @@
 		module="capstoneui$sources"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20200218233022"
+		publication="20200219163402"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
